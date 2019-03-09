@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>ISVI</title>
+	<meta name="keywords" content="ISVI,元真,元真投資,價值投資" />
+	<meta name="description" content="元真價值投資" />	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/home.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+	<link rel="stylesheet" type="text/css" href="font/font.css" />
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<!-- Swiper JS -->
+	<script src="js/swiper.min.js"></script>
+	<style>
+		*{font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif}
+		.normalText,.subtext,.title {font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif}
+		#area .area_content div {
+			width: 46%;
+			margin-right: 10px;
+		}
+	</style>
+	<script>
+		
+		function rem () {
+			var whdef = 100 / 1920; // 表示1920的设计图,使用100PX的默认值 
+			var whdef_m = 100 / 750;
+			var wW = window.innerWidth; // 当前窗口的宽度
+			var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值 
+			if (wW > 750) {
+				document.getElementsByTagName('html')[0].style.fontSize = rem + 'px';
+			} else {
+				document.getElementsByTagName('html')[0].style.fontSize = whdef_m * wW + 'px';
+			}
+		}
+		rem ();
+		window.addEventListener('resize',function(){rem ()})
+		// window.onresize = function () {
+		// 	var wW = window.innerWidth; // 当前窗口的宽度
+		// 	var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值 
+		// 	console.log(wW)
+		// 	if (wW > 750) {
+		// 		document.getElementsByTagName('html')[0].style.fontSize = rem + 'px';
+		// 	} else {
+		// 		document.getElementsByTagName('html')[0].style.fontSize = whdef_m * wW + 'px';
+		// 	}
+		// }
+	</script>
+</head>
+
+<body>
+	<div id="headerTop">
+		<img src="img/pc1.jpg" />
+	</div>
+	<div id="headerTop_m">
+		<img src="img/p1.jpg" />
+	</div>
+	<!-- 导航 -->
+	<div id="nav">
+		<span class="nav_logo">
+			<a href="#"><img src="img/logo_m_m.png"></a>
+		</span>
+		<span class="nav_tab">
+			<span id="tofounder" href="#founder">About ISVI</span>
+			<span id="toarea">What we seek</span>
+			<span  id="topartner">Team</span>
+			<span  id="todaily">Investment Diary</span>
+			<span id="tocontact">Contact</span>
+			<div class="sizeAct">
+				<img src="img/en_act.png" class="sizeIcon" id="jian_act"/>
+				<img src="img/en.png"  class="sizeIcon ishide" id="jian"/>
+				<a href="index.html"><img src="img/jian.png"      class="sizeIcon ishide" id="fan" /></a>
+				<a href="index.html"><img src="img/jian_act.png"  class="sizeIcon ishide" id="fan_act" /></a>
+				<a href="index_fan.html"><img src="img/fan.png"       class="sizeIcon ishide" id="en" /></a>
+				<a href="index_fan.html"><img src="img/fan_act.png"   class="sizeIcon ishide" id="en_act" /></a>
+			</div>
+		</span>
+	</div>
+	<div id="nav_m">
+		<span class="nav_logo">
+			<a href="#"><img src="img/logo_m_m.png"></a>
+		</span>
+		<span class="nav_menu">
+			<img src="img/menu.jpg" id="menubtn" />
+		</span>
+	</div>
+	<!-- 菜单 -->
+	<div id="toggleNav">
+		<img src="img/close.png" id="close_btn" />
+		<div id="nav_right_m" class="nav_right nav_right_mo">
+			<dir style="width:100%;height: 60px;"></dir>
+			<a href="#founder_m">
+				<div class="nav_tab1 ">About ISVI</div>
+			</a>
+			<a href="#area_m">
+				<div class="nav_tab2">What we seek</div>
+			</a>
+			<a href="#partner_m">
+				<div class="nav_tab3">Team</div>
+			</a>
+			<a href="#daily_m">
+				<div class="nav_tab4">Investment Diary</div>
+			</a>
+			<a href="#contact_m">
+				<div class="nav_tab5">Contact</div>
+			</a>
+			<div class="nav_btn">
+				<img src="img/jian_act.png" class="fontIcon1" />
+				<img src="img/fan.png" class="fontIcon2 " />
+				<img src="img/en.png" class="fontIcon3 " />
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 创始人的话 -->
+	<div id="founder">
+		<div class="founder_left">
+			<div class="specialText1">About</div>
+			<div class="specialText2">ISVI</div>
+			<!--<div class="normalText pd10">元真创始人的话</div>-->
+		</div>
+		<div class="founder_right">
+			<div>After nearly ten years of research and accumulation, Initial Science Research Institution was formally established in 2016.
+				The word "Yuan Zhen" is easy to understand, the begin and the reality.
+				As a practitioner of Chinese cultural wisdom, we believe that Chinese cultural wisdom is the most original and true science of the Chinese nation, the greatest treasure of our Chinese nation, and the cornerstone of the unique core algorithm of Initial Science Research Institution.
+			</div>
+			<div>After 18 months of combing and focusing, Initial Research Institute officially changed our name to Initial Science Value Investment, focusing on the exploration and investment of high-quality start-ups. We are convinced that early equity investment has unlimited opportunities and possibilities. It is our responsibility and mission to find and nurture the outstanding entrepreneurs of China's future and to accompany them to realize the value of life, corporate value and social value.</div>
+			<div>We adhere to our stable development rhythm and people-oriented origin investment philosophy, low-key and steady, and pursue more solid and long-term planning and development. We are not eager to combine with the Chinese cultural wisdom system for the future of equity investment in start-ups. We believe in the philosophy of quality, obey the principle of investment that is not heavy, not heavy, and work slowly. There is only one theme, value investment.</div>
+		</div>
+		<img src="img/pc2.png" class="founder_img">
+	</div>
+	<div id="founder_m">
+		<div class="founder_left">
+			<div class="specialText">About</div>
+			<div class="specialText">ISVI</div>
+			<!--<div class="normalText ">元真创始人的话</div>-->
+		</div>
+		<div class="founder_right">
+			<div class="founder_text">After nearly ten years of research and accumulation, Initial Science Research Institution was formally established in 2016.
+				The word "Yuan Zhen" is easy to understand, the begin and the reality.
+				As a practitioner of Chinese cultural wisdom, we believe that Chinese cultural wisdom is the most original and true science of the Chinese nation, the greatest treasure of our Chinese nation, and the cornerstone of the unique core algorithm of Initial Science Research Institution.</div>
+			<div class="founder_text founder_text_a  hide_m">After 18 months of combing and focusing, Initial Research Institute officially changed our name to Initial Science Value Investment, focusing on the exploration and investment of high-quality start-ups. We are convinced that early equity investment has unlimited opportunities and possibilities. It is our responsibility and mission to find and nurture the outstanding entrepreneurs of China's future and to accompany them to realize the value of life, corporate value and social value.</div>
+			<div class="founder_text founder_text_a hide_m">We adhere to our stable development rhythm and people-oriented origin investment philosophy, low-key and steady, and pursue more solid and long-term planning and development. We are not eager to combine with the Chinese cultural wisdom system for the future of equity investment in start-ups. We believe in the philosophy of quality, obey the principle of investment that is not heavy, not heavy, and work slowly. There is only one theme, value investment.</div>
+			<div class="toShow"><img src="img/1.jpg"/>Open</div>
+			<div class="tohide hide_m"><img src="img/2.jpg"/>Close</div>
+		</div>
+		<img src="img/pc2.png" class="founder_img">
+	</div>
+	<!-- 践行者 -->
+	<div id="practitioner">
+		<img src="img/pc3.jpg" class="practitioner_pc" />
+		<img src="img/p3.jpg" class="practitioner_m" />
+		<!--<div class="normalText">中华智慧践行者</div>-->
+		<div class="specialText">The Practitioners Of Chinese Wisdom</div>
+	</div>
+
+	<!-- 关注领域 -->
+	<div id="area" class="area" style="width: ">
+		<div class="area_left">
+			<div class="specialText">What</div>
+			<div class="specialText">we</div>
+			<div class="specialText">seek</div>
+			<!--<div class="normalText">关注领域</div>-->
+		</div>
+		<div class="area_content">
+			<div class="i1">
+				<img src="img/i1.png" />
+				<div class="title">Medical health</div>
+				<div class="subtext">Supporting national pillar industries and caring for the cornerstone of human life, we investi in health care and helping more people improve their quality of life.</div>
+			</div>
+			<div class="i2">
+				<img src="img/i2.png" />
+				<div class="title">Advanced Manufacturing</div>
+				<div class="subtext">Technological innovation has brought about business transformation, and we should look forward to the deep integration of advanced manufacturing and modern service industries.</div>
+			</div>
+			<div class="i3">
+				<img src="img/i3.png" />
+				<div class="title">Consuming</div>
+				<div class="subtext">Eating, drinking, living & traveling, the mass consumption is what we invest in. We will return investment to the essence of business and let the people of the world do business with us.</div>
+			</div>
+			<div class="i4">
+				<img src="img/i4.png" />
+				<div class="title">Enterprise services</div>
+				<div class="subtext">Technology-driven enterprise service companies, including cloud computing, big data, security, artificial intelligence and other directions are the future trend.</div>
+			</div>
+		</div>
+	</div>
+	<!-- 关注领域 -->
+	<div id="area_m">
+		<div class="specialText">What we seek</div>
+		<!--<div class="normalText">关注领域</div>-->
+
+		<div class="area_list">
+			<div><img src="img/i1.png" class="i1" /></div>
+			<div class="title">Medical health</div>
+			<div class="text">Supporting national pillar industries and caring for the cornerstone of human life, we investi in health care and helping more people improve their quality of life.</div>
+		</div>
+		<div class="area_list">
+			<div><img src="img/i2.png" class="i2" /></div>
+			<div class="title">Advanced Manufacturing</div>
+			<div class="text">Technological innovation has brought about business transformation, and we should look forward to the deep integration of advanced manufacturing and modern service industries.</div>
+		</div>
+		<div class="area_list">
+			<div><img src="img/i3.png" class="i3" /></div>
+			<div class="title">Consuming</div>
+			<div class="text">Eating, drinking, living & traveling, the mass consumption is what we invest in. We will return investment to the essence of business and let the people of the world do business with us.</div>
+		</div>
+		<div class="area_list">
+			<div><img src="img/i4.png" class="i4" /></div>
+			<div class="title">Enterprise services</div>
+			<div class="text">Technology-driven enterprise service companies, including cloud computing, big data, security, artificial intelligence and other directions are the future trend.</div>
+		</div>
+	</div>
+
+	<!-- 愿景·壹點零 -->
+	<div id="vision">
+		<img src="img/pc4.jpg" class="vision_pc" />
+		<img src="img/p4.jpg" class="vision_m" />
+		<div class="text1">Vision1.0</div>
+		<div class="text2">In the first decade, we aim to build a standard system of value investment in China.</div>
+		<div class="text3">Our vision is to discover and nurture outstanding entrepreneurs in the global future, and to accompany them to realize their life value, enterprise value and social value.</div>
+		<div class="text4">Our value</div>
+		<!-- <div class="textImg"><img src="img/ninec.png" /></div> -->
+		<div class="textbox">
+			<div class="box"> 
+				<div>矢志</div>
+				<span>不渝</span>
+				<img src="img/o.png"/>
+			</div>
+			<div class="box">
+				<div>正心</div>
+				<span>诚意</span>
+				<img src="img/o.png"/>
+			</div>
+			<div class="box">
+				<div>先舍</div>
+				<span>后得</span>
+				<img src="img/o.png"/>
+			</div>
+			<div class="box">
+				<div>脚踏</div>
+				<span>实地</span>
+				<img src="img/o.png"/>
+			</div>
+			<div class="box">
+				<div>持之</div>
+				<span>以恒</span>
+				<img src="img/o.png"/>
+			</div>
+			<div class="box">
+				<div>学无</div>
+				<span>止境</span>
+				<img src="img/o.png"/>
+			</div>
+			<div class="box">
+				<div>精益</div>
+				<span>求精</span>
+				<img src="img/o.png"/>
+			</div>
+			<div class="box">
+				<div>众志</div>
+				<span>成城</span>
+				<img src="img/o.png"/>
+			</div>
+			<div class="box">
+				<div>饮水</div>
+				<span>思源</span>
+				<img src="img/o.png"/>
+			</div>
+		</div>
+	</div>
+
+	<!-- 元真伙伴 -->
+	<div id="partner" class="partner">
+		<div class="partner_left">
+			<div class="specialText">Team</div>
+			<!--<div class="normalText">元真伙伴</div>-->
+		</div>
+		<div class=" newbtn">
+			<div class="newbtn_w">
+				<div class="top-up"><img src="img/up.png" id="up" /></div>
+				<div class="icon-poi"><i class="point1 iconyuandianzhong point_act"></i> </div>
+				<div class="icon-poi"><i class="point2 iconyuandianzhong "></i> </div>
+				<div class="boom-down"><img src="img/down.png" id="down" /></div>
+			</div>
+		</div>
+		<div class="partner_right">
+			<div class="scrollbox scrollbox-user">
+				<div id="scrollDiv" class="swiper-wrapper">
+					<div class="swiper-slide">
+						<ul id="scroll_a">
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text">
+										<div class="scroll_text_a">Rosen</div>
+										<!-- <div class="scroll_text_b">董事长</div> -->
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">羅森</div>
+										<span class="scroll_text_d">
+											<div style="padding-top:.5rem;font-size:.23rem;">Chairman</div>
+											<!-- <div>深圳博林集团有限公司 副总裁</div>
+											<div>广东省海青会 副会长</div>
+											<div>深圳市侨青委 副主任</div>
+											<div>深圳市总商会第七届理事会 执委</div>
+											<div>深圳市慈善会73集团慈善基金</div>
+											<div>联合创始人 </div> -->
+										</span>
+									</div>
+									<img src="img/m1.png" class="partner_img">
+								</div>
+								
+							</li>
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text">
+										<div class="scroll_text_a">Alex</div>
+										<div class="scroll_text_b">Founding Partner</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">賴潤偉</div>
+										<div class="scroll_text_d">
+											Worked in Alibaba for more than ten years in the financial field.
+											Has long been committed to investment decision-making in the integration of Chinese and Western wisdom.
+											Loves the investment industry and has rich practical experience.
+											Has unique insights into entrepreneurship & angel investment and strives to practice "investment is people-oriented".
+										</div>
+									</div>
+									<img src="img/m2.png" class="partner_img">
+								</div>
+							</li>
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<img src="img/m3.png" class="partner_img">
+									<div class="scroll_text">
+										<div class="scroll_text_a">PQ</div>
+										<div class="scroll_text_b">Treasurer</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">彭清</div>
+										<div class="scroll_text_f">More blessed to give than to receive</div>
+									</div>
+								</div>
+							</li>
+							<li class="bottom-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text  scroll_text_top">
+										<div class="scroll_text_a">Queenie</div>
+										<div class="scroll_text_b">Investment Manager</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">王沁怡</div>
+										<div class="scroll_text_d">Love is the greatest power of the universe</div>
+									</div>
+									<img src="img/m4.png" class="partner_img">
+								</div>
+							</li>
+							<li class="bottom-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text  scroll_text_top">
+										<div class="scroll_text_a">Chris</div>
+										<div class="scroll_text_b">Investment Manager</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">许越</div>
+										<div class="scroll_text_d">
+											No mastery, no hunting
+										</div>
+									</div>
+									<img src="img/m5.png" class="partner_img">
+								</div>
+							</li>
+							<li class="bottom-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text  scroll_text_top">
+										<div class="scroll_text_a">Jack</div>
+										<div class="scroll_text_b">Investment Assistant</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">林训强</div>
+										<div class="scroll_text_d">
+											Never forget the beginning
+										</div>
+									</div>
+									<img src="img/m6.png" class="partner_img">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-slide">
+						<ul id="scroll_a">
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text ">
+										<div class="scroll_text_a">Yen</div>
+										<div class="scroll_text_b">Cashier</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">罗晓燕</div>
+										<div class="scroll_text_f">
+											Work hard, come on! be the better one
+										</div>
+									</div>
+									<img src="img/m7.png" class="partner_img">
+								</div>
+							</li>
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text ">
+										<div class="scroll_text_a">Kerry</div>
+										<div class="scroll_text_b">Financial Assistant</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">陈嘉宜</div>
+										<div class="scroll_text_f">
+											Everything in the world is meaningful
+										</div>
+									</div>
+									<img src="img/m8.png" class="partner_img">
+								</div>
+							</li>
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text ">
+										<div class="scroll_text_a">Iva</div>
+										<div class="scroll_text_b">Administrative Assistant</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">周兰迎</div>
+										<div class="scroll_text_f">
+											People can do it because they believe it can
+										</div>
+									</div>
+									<img src="img/m9.png" class="partner_img">
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 元真伙伴 -->
+	<div id="partner_m" class="partner ">
+		<div class="partner_a">
+			<div class="specialText">Team</div>
+			<!--<div class="normalText">元真伙伴</div>-->
+		</div>
+		<div class="swiper-container pa-pt-let">
+			<div class="swiper-wrapper" class="scrollbox">
+				<div class="swiper-slide">
+					<ul class="scroll_a">
+						<li class="top-li">
+							<div class="list">
+								<div class="scroll_text">
+									<div class="scroll_text_a">Rosen</div>
+									<div class="scroll_text_e">/</div>
+									<div class="scroll_text_c">羅森</div>
+									<span class="scroll_text_d">
+										<div style="font-size:.29rem;padding-top:.8rem;">Chairman</div>
+										<!-- <div>深圳博林集团有限公司 副总裁</div>
+										<div>广东省海青会 副会长</div>
+										<div>深圳市侨青委 副主任</div>
+										<div>深圳市总商会第七届理事会 执委</div>
+										<div>深圳市慈善会73集团慈善基金</div>
+										<div>联合创始人 </div> -->
+									</span>
+								</div>
+								<img src="img/m1.png" class="partner_img">
+							</div>
+						</li>
+						<li class="top-li">
+							<div class="list">
+								<div class="scroll_text">
+									<div class="scroll_text_a">Alex</div>
+									<div class="scroll_text_b">创始合伙人</div>
+									<div class="scroll_text_e">/</div>
+									<div class="scroll_text_c">賴潤偉</div>
+									<div class="scroll_text_d">
+										Worked in Alibaba for more than ten years in the financial field.
+										Has long been committed to investment decision-making in the integration of Chinese and Western wisdom.
+										Loves the investment industry and has rich practical experience.
+										Has unique insights into entrepreneurship & angel investment and strives to practice "investment is people-oriented".
+									</div>
+								</div>
+								<img src="img/m2.png" class="partner_img">
+							</div>
+						</li>
+						<li class="bottom-li">
+							<div class="list">
+							<img src="img/m3.png" class="partner_img">
+							<div class="scroll_text scroll_text_top">
+								<div class="scroll_text_a">PQ</div>
+								<div class="scroll_text_b">Treasurer</div>
+								<div class="scroll_text_e">/</div>
+								<div class="scroll_text_c">彭清</div>
+								<div class="scroll_text_d">
+									More blessed to give than to receive
+								</div>
+							</div>
+						</div></li>
+						<li class="bottom-li">
+							<div class="list">
+								<div class="scroll_text scroll_text_top">
+									<div class="scroll_text_a">Queenie</div>
+									<div class="scroll_text_b">Investment Manager</div>
+									<div class="scroll_text_e">/</div>
+									<div class="scroll_text_c">王沁怡</div>
+									<div class="scroll_text_d">
+										Love is the greatest power of the universe
+									</div>
+								</div>
+								<img src="img/m4.png" class="partner_img">
+							</div>
+						</li> 
+					</ul>
+				</div>
+				<div class="swiper-slide">
+					<ul class="scroll_a"> 
+						<li class="top-li">
+							<div class="list">
+								<div class="scroll_text">
+									<div class="scroll_text_a">Chris</div>
+									<div class="scroll_text_b">Investment Manager</div>
+									<div class="scroll_text_e">/</div>
+									<div class="scroll_text_c">许越</div>
+									<div class="scroll_text_f">
+										No mastery, no hunting
+									</div>
+								</div>
+								<img src="img/m5.png" class="partner_img">
+							</div>
+						</li>
+						<li class="top-li">
+							<div class="list">
+								<div class="scroll_text">
+									<div class="scroll_text_a">Jack</div>
+									<div class="scroll_text_b">Investment Assistant</div>
+									<div class="scroll_text_e">/</div>
+									<div class="scroll_text_c">林训强</div>
+									<div class="scroll_text_f">
+										Never forget the beginning
+									</div>
+								</div>
+								<img src="img/m6.png" class="partner_img">
+							</div>
+						</li>
+						<li class="bottom-li">
+							<div class="list">
+								<img src="img/m7.png" class="partner_img">
+								<div class="scroll_text scroll_text_top ">
+									<div class="scroll_text_a">Yen</div>
+									<div class="scroll_text_b">Cashier</div>
+									<div class="scroll_text_e">/</div>
+									<div class="scroll_text_c">罗晓燕</div>
+									<div class="scroll_text_d">
+										Work hard, come on! be the better one
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="bottom-li">
+							<div class="list">
+								<div class="scroll_text scroll_text_top">
+									<div class="scroll_text_a">Kerry</div>
+									<div class="scroll_text_b">Financial Assistant</div>
+									<div class="scroll_text_e">/</div>
+									<div class="scroll_text_c">陈嘉宜</div>
+									<div class="scroll_text_d">
+										Everything in the world is meaningful
+									</div>
+								</div>
+								<img src="img/m8.png" class="partner_img">
+							</div>
+						</li> 
+					</ul>
+				</div>
+				<div class="swiper-slide">
+					<ul class="scroll_a">
+						<li class="top-li">
+							<div class="list">
+								<div class="scroll_text">
+									<div class="scroll_text_a">Iva</div>
+									<div class="scroll_text_b">Administrative Assistant</div>
+									<div class="scroll_text_e">/</div>
+									<div class="scroll_text_c">周兰迎</div>
+									<div class="scroll_text_f">
+										People can do it because they believe it can
+									</div>
+								</div>
+								<img src="img/m9.png" class="partner_img">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+
+
+	<!-- 投资日志-->
+	<div id="daily" class="daily">
+		<img src="img/pc5.jpg" class="daily_bg" />
+		<div class="daily_left">
+			<div class="specialText">Investment Diary</div>
+			<!--<div class="normalText">投资日志</div>-->
+		</div>
+		<div class="daily_btn">
+			<div class="daily_btn_w"> 
+				<div><img src="img/up.png" id="daily_up" /></div>
+				<div><i class="point1 iconyuandianzhong point_act"></i> </div>
+				<div><i class="point2 iconyuandianzhong "></i> </div>
+				<div style="padding-top:.06rem"><img src="img/down.png" id="daily_down" /></div>
+			</div>
+		</div>
+		<div class="daily_right">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide scrolldaily">
+					<div class="list list_button">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">Intelligent Haptronic</div>
+								<div class="text_v">Solutions Inc.</div>
+								<div class="text_e">/</div>
+								<span class="taxt_b">
+									<div>Founder: Tang Zhouming, </div>
+									<div>Mustapha Aassouli</div>
+									<div>Investment time: October 2017</div>
+									<div>Investment stage: seed round</div>
+								</span>
+							</div>
+							<img src="img/t1.png" class="daily_img">
+						</div>
+					</div>
+					<div class="list list_button">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">Beijing DongWangTianXia</div>
+								<div class="text_v">Technology Co., Ltd.</div>
+								<div class="text_e">/</div>
+								<span class="taxt_b">
+									<div> Founder: Mei Zijia</div>
+									<div>Investment time: November 2017</div>
+									<div>Investment stage: Pre-A+ round</div>
+								</span>
+							</div>
+							<img src="img/t2.png" class="daily_img">
+						</div>
+					</div>
+					<div class="list list_button">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">YIPMAN</div>
+								<div class="text_e">/</div>
+								<span class="taxt_b">
+									<div> Founder: Ye Hongrui, Xie Pengxiang</div>
+									<div>Investment time: November 2017</div>
+									<div>Investment stage: seed round</div>
+								</span>
+							</div>
+							<img src="img/t3.png" class="daily_img">
+						</div>
+					</div>
+					<div class="list list_top">
+						<div class="sz-list">
+							<div class="list_textRow  ">
+								<div class="text_a">Superlucky</div>
+								<div class="text_e">/</div>
+								<span class="taxt_b">
+									<div>Founder: Lan Peng</div>
+									<div>Investment time: March 2018</div>
+									<div>Investment stage: seed round</div>
+								</span>
+							</div>
+							<img src="img/t4.png" class="daily_img">
+						</div>
+					</div>
+					<div class="list list_top">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">Weplus media</div>
+								<div class="text_e">/</div>
+								<span class="taxt_b">
+									<div>Founder: Cheng Min (Monica)</div>
+									<div>Investment time: April 2018</div>
+									<div>Investment stage: Angel Wheel</div>
+								</span>
+							</div>
+							<img src="img/t5.png" class="daily_img">
+						</div>
+					</div>
+					<div class="list list_top">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">FJ DYNAMICS</div>
+								<div class="text_e">/</div>
+								<span class="taxt_b">
+									<div>Founder: Wu Di</div>
+									<div>Investment time: November 2018</div>
+									<div>Investment stage: Angel Wheel</div>
+								</span>
+							</div>
+							<img src="img/t6.png" class="daily_img">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide scrollDiv">
+					<div class="list list_button">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">Gala land</div>
+								<div class="text_e">/</div>
+								<span class="taxt_b">
+									<div>Founder: Wei Bo</div>
+									<div>Investment time: May 2018</div>
+									<div>Investment stage: seed round</div>
+								</span>
+							</div>
+							<img src="img/t7.png" class="daily_img">
+						</div>
+					</div>
+					<div class="list list_button">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">CHATEAU SEGONZAC</div>
+								<div class="text_e">/</div>
+								<span class="taxt_b">
+									<div>Founder: Li Yuqi (Kelvin)</div>
+									<div>Investment time: July 2018</div>
+								</span>
+							</div>
+							<img src="img/t8.png" class="daily_img">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<div id="daily_m" class="daily">
+		<img src="img/p5.jpg" class="daily_bg" />
+		<div class="daily_a">
+			<div class="specialText">Investment Diary</div>
+			<!--<div class="normalText">投资日志</div>-->
+		</div>
+		<div class="swiper-container ishide">
+			<div class="swiper-wrapper" class="scrollbox">
+				<div class="swiper-slide" style="margin-left:-2%">
+					<ul class="scroll_a" >
+						<li>
+							<div class="list list_button">
+									<div class="sz-list">
+									<img src="img/t1.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">Intelligent Haptronic</div>
+										<div class="text_v">Solutions Inc.</div>
+										<div class="text_e">/</div>
+										<span class="taxt_b">
+											<div>Founder: Tang Zhouming, </div>
+											<div>Mustapha Aassouli</div>
+											<div>Investment time: October 2017</div>
+											<div>Investment stage: seed round</div>
+										</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="list list_button">
+								<div class="sz-list">
+									<img src="img/t2.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">Beijing DongWangTianXia</div>
+										<div class="text_v">Technology Co., Ltd.</div>
+										<div class="text_e">/</div>
+										<span class="taxt_b">
+											<div>Founder: Mei Zijia</div>
+											<div>Investment time: November 2017</div>
+											<div>Investment stage: Pre-A+ round</div>
+										</span>
+									</div>
+								</div>
+								
+							</div>
+						</li>
+						<li>
+							<div class="list list_top">
+								<div class="sz-list">
+									<img src="img/t3.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">YIPMAN</div>
+										<div class="text_e">/</div>
+										<span class="taxt_b">
+											<div>Founder: Ye Hongrui, Xie Pengxiang</div>
+											<div>Investment time: November 2017</div>
+											<div>Investment stage: seed round</div>
+										</span>
+									</div>
+								</div>
+								
+							</div>
+						</li>
+						<li>
+							<div class="list list_top">
+								<div class="sz-list">
+									<img src="img/t4.png" class="daily_img">
+									<div class="list_textRow  ">
+										<div class="text_a">Superlucky</div>
+										<div class="text_e">/</div>
+										<span class="taxt_b">
+											<div>Founder: Lan Peng</div>
+											<div>Investment time: March 2018</div>
+											<div>Investment stage: seed round</div>
+										</span>
+									</div>
+								</div>
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="swiper-slide">
+					<ul class="scroll_a">
+						<li>
+							<div class="list list_button">
+								<div class="sz-list">
+								<img src="img/t5.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">Weplus media</div>
+										<div class="text_e">/</div>
+										<span class="taxt_b">
+											<div>Founder: Cheng Min (Monica)</div>
+											<div>Investment time: April 2018</div>
+											<div>Investment stage: Angel Wheel</div>
+										</span>
+									</div>
+								</div>
+							</div>
+							
+						</li>
+						<li>
+							<div class="list list_button">
+								<div class="sz-list">
+									<img src="img/t6.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">FJ DYNAMICS</div>
+										<div class="text_e">/</div>
+										<span class="taxt_b">
+											<div>Founder: Wu Di</div>
+											<div>Investment time: November 2018</div>
+											<div>Investment stage: Angel Wheel</div>
+										</span>
+									</div>
+								</div>
+							</div>
+							
+						</li>
+						<li>
+							<div class="list list_top">
+								<div class="sz-list">
+									<img src="img/t7.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">Gala land</div>
+										<div class="text_x">/</div>
+										<span class="taxt_g">
+											<div>Founder: Wei Bo</div>
+											<div>Investment time: May 2018</div>
+											<div>Investment stage: seed round</div>
+										</span>
+									</div>
+								</div>
+								
+							</div>
+						</li>
+						<li>
+							<div class="list list_top">
+								<div class="sz-list">
+									<img src="img/t8.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">CHATEAU SEGONZAC</div>
+										<div class="text_x">/</div>
+										<span class="taxt_g">
+											<div>Founder: Li Yuqi (Kelvin)</div>
+											<div>Investment time: July 2018</div>
+										</span>
+									</div>
+								</div>
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+
+
+	<!-- 联系我们 -->
+	<div id="contact" class="contact">
+		<div class="contact_left">
+			<div class="content_tab_a">
+				<div class="content_tab_title">Contact</div>
+				<div class="content_tab_subtext">0755-33349223</div>
+			</div>
+			<div class="content_tab_a">
+				<div class="content_tab_title">Email</div>
+				<div class="content_tab_subtext">BP@initsci.com</div>
+			</div>
+			<div class="content_tab_a">
+				<div class="content_tab_title">Resume delivery</div>
+				<div class="content_tab_subtext">HR@initsci.com</div>
+			</div>
+		</div>
+		<div class="contact_center">
+			<div class="content_tab_b smb1">
+				<div class="content_tab_title">Address</div>
+				<div class="content_tab_subtext1">1503, Block C, Dachong Business Center,</div>
+				<div class="content_tab_subtext1"> Nanshan District, Shenzhen, Guangdong, China</div>
+			</div>
+			<div class="content_tab_b" style="position: relative;">
+				<div class="content_tab_title">Follow us</div>
+				<div class="content_tab_subtext smb2" id="Wechat">Wechat</div>
+				<img src="img/code.jpg" class="code_pc ishide">
+			</div>
+		</div>
+		<img src="img/p6.png" class="contact_map">
+	</div>
+	<div id="contact_m" class="contact">
+		<div class="contact_list_a">
+			<div class="contact_a">
+				<div class="greyText">Contact</div>
+				<div class="specialText" style="color: #c69c6d;">0755-33349223</div>
+			</div>
+			<div class="contact_b">
+				<div class="greyText">Address</div>
+				<div class="specialText">
+					<div>1503, Block C, Dachong Business Center,</div>
+					<div>Nanshan District, Shenzhen, Guangdong, China</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact_list_b">
+			<div class="contact_a">
+				<div class="greyText">Email</div>
+				<div class="specialText">BP@initsci.com</div>
+			</div>
+			<div class="contact_b">
+				<div class="greyText">Follow us</div>
+				<img src="img/code.jpg">
+			</div>
+		</div>
+		<div class="contact_list_c">
+			<div class="contact_a">
+				<div class="greyText">Resume delivery</div>
+				<div class="specialText">HR@initsci.com</div>
+			</div>
+		</div>
+		<img src="img/p6.png" class="mapImg" />
+	</div>
+	<div id="footer">© 2018 元真价值投资 粤ICP证080268号</div>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		});
+		// window.onresize = function () {
+		// 	var seeUser =  new Swiper('.scrollbox-user', {
+		// 		direction : 'vertical',
+		// 		height : window.innerWidth/19.2*5.4,
+		// 		pagination: {
+		// 			el: '.swiper-pagination',
+		// 		},
+		// 	})
+		// 	var seip = new Swiper('.daily_right', {
+		// 		direction : 'vertical',
+		// 		height : window.innerWidth/19.2*4.55,
+		// 		pagination: {
+		// 			el: '.swiper-pagination',
+		// 		},
+		// 	})
+		// }
+		var seeUser =  new Swiper('.scrollbox-user', {
+			direction : 'vertical',
+			// height : window.innerWidth/19.2*5.4,
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		})
+		$('#up').click(function () {
+			seeUser.slidePrev();
+		})
+		$('#down').click(function () {
+			seeUser.slideNext();
+		})
+		$(".user-hea-transition").hover(function(ev){
+			var isName = $(this).parent()[0].className
+			if(isName == 'top-li') {
+				var aL = $(this).parents('li').index() + 3
+				$(this).parents('ul').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
+				.siblings('.scroll_text').hide(0)
+			}else {
+				var aL = $(this).parents('li').index() - 3
+				$(this).parents('ul').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
+				.siblings('.scroll_text').hide(0)
+			}
+		},function() {
+			$(this).parent().siblings().find('.partner_img').removeClass('z-index-img')
+			.siblings('.scroll_text').show(0)
+		})
+		var seip = new Swiper('.daily_right', {
+			direction : 'vertical',
+			// height : window.innerWidth/19.2*4.55,
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		})
+		$('#daily_up').click(function () {
+			seip.slidePrev();
+		})
+		$('#daily_down').click(function () {
+			seip.slideNext();
+		})
+		$("#daily .sz-list").hover(function(ev){
+			var isName = $(this).parent()[0].className
+			if(isName == 'list list_button') {
+				var aL = $(this).parents('.list').index() + 3
+				$(this).parents('.swiper-slide').find('.list').eq(aL).find('.daily_img').addClass('z-index-img')
+				.siblings('.list_textRow').hide(0)
+			}else {
+				console.log(1999999)
+				var aL = $(this).parents('.list').index() - 3
+				console.log(aL)
+				$(this).parents('.swiper-slide').find('.list').eq(aL).find('.daily_img').addClass('z-index-img')
+				.siblings('.list_textRow').hide(0)
+			}
+		},function() {
+			$(this).parent().siblings().find('.daily_img').removeClass('z-index-img')
+			.siblings('.list_textRow').show(0)
+		})
+		$("#daily_m .sz-list").hover(function(ev){
+			var isName = $(this).parent()[0].className
+			if(isName == 'list list_button') {
+				var aL = $(this).parents('li').index() + 2
+				$(this).parents('.scroll_a').find('li').eq(aL).find('.daily_img').addClass('z-index-img')
+				.siblings('.list_textRow').hide(0)
+			}else {
+				console.log(991)
+				var aL = $(this).parents('li').index() - 2;
+				$(this).parents('.scroll_a').find('li').eq(aL).find('.daily_img').addClass('z-index-img')
+				.siblings('.list_textRow').hide(0)
+			}
+		},function() {
+			$('#daily_m .list .sz-list .daily_img').removeClass('z-index-img')
+			.siblings('.list_textRow').show(0)
+		})
+		$("#partner_m .swiper-container li .list").hover(function(ev){
+			var isName = $(this).parent()[0].className
+			console.log(isName)
+			if(isName == 'top-li') {
+				var aL = $(this).parents('li').index() + 2
+				$(this).parents('.scroll_a').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
+				.siblings('.scroll_text').hide(0)
+			}else {
+				console.log(19999)
+				var aL = $(this).parents('li').index() - 2;
+				$(this).parents('.scroll_a').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
+				.siblings('.scroll_text').hide(0)
+			}
+		},function() {
+			$('#partner_m .swiper-container .list .partner_img').removeClass('z-index-img')
+			.siblings('.scroll_text').show(0)
+		})
+	</script>
+</body>
+
+</html>
