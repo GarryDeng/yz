@@ -161,7 +161,7 @@
 }
 
 .sizeIcon {
-	width: 0.2rem; max-width: 25px ;
+	width: 0.2rem; max-width: 25px ;min-width: 16px;
 	vertical-align: sub;  cursor: pointer;
 }
 .sizeAct{ float: right;vertical-align: sub; 
@@ -298,7 +298,8 @@
 	width: 6.99rem;
 	height: 5.5rem;
 	top: 2.27rem;
-	left: 5.75rem
+	left: 5.75rem;
+	z-index: -1;
 }
 
 #founder_m {
@@ -568,9 +569,11 @@
 	font-size: 0.2rem;
 	position: absolute;
 	text-align: center;
-	top: 2.83rem;
+	top: 2.95rem;
 }
-
+#vision .text2.text-m-75{
+	display: none;
+}
 #vision .text3 {
 	width: 80%;
 	margin: 0 10%;
@@ -811,25 +814,26 @@
 
 #scrollDiv .scroll_text_b {
 	font-size: 0.2rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 2.65rem;
-	width: 100%;
+	width: 90%;
 	text-align: center
 }
 
 #scrollDiv .scroll_text_e {
 	font-size: 0.1rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 2.98rem;
-	width: 100%;
+	width: 90%;
+	left: 10%;
 	text-align: center
 }
 
 #scrollDiv .scroll_text_c {
 	font-size: 0.16rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 3.21rem;
 	width: 100%;
@@ -838,7 +842,7 @@
 
 #scrollDiv .scroll_text_d {
 	font-size: 0.12rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 3.46rem;
 	width: 100%;
@@ -851,11 +855,12 @@
 
 #scrollDiv .scroll_text_f {
 	font-size: 0.12rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 4.08rem;
-	width: 100%;
-	text-align: center
+	width: 90%;
+	text-align: center;
+	left: 5%;
 }
 
 #scrollDiv .scroll_text_top {
@@ -881,7 +886,7 @@
 
 #scrollDiv .scroll_text_top .scroll_text_b {
 	font-size: 0.2rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 1.08rem;
 	width: 100%;
@@ -890,7 +895,7 @@
 
 #scrollDiv .scroll_text_top .scroll_text_e {
 	font-size: 0.1rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 1.39rem;
 	width: 100%;
@@ -899,7 +904,7 @@
 
 #scrollDiv .scroll_text_top .scroll_text_c {
 	font-size: 0.16rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 1.59rem;
 	width: 100%;
@@ -908,7 +913,7 @@
 
 #scrollDiv .scroll_text_top .scroll_text_d {
 	font-size: 0.12rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 2.31rem;
 	width: 100%;
@@ -1189,7 +1194,7 @@
 
 #scrollDiv .scroll_text_b {
 	font-size: 0.2rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 2.65rem;
 	width: 100%;
@@ -1198,7 +1203,7 @@
 
 #scrollDiv .scroll_text_e {
 	font-size: 0.1rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 2.98rem;
 	width: 100%;
@@ -1207,7 +1212,7 @@
 
 #scrollDiv .scroll_text_c {
 	font-size: 0.16rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 3.21rem;
 	width: 100%;
@@ -1216,7 +1221,7 @@
 
 #scrollDiv .scroll_text_d {
 	font-size: 0.14rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 3.46rem;
 	width: 90%;
@@ -1231,10 +1236,10 @@
 
 #scrollDiv .scroll_text_f {
 	font-size: 0.14rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 4.08rem;
-	width: 100%;
+	width: 90%;
 	text-align: center
 }
 
@@ -1272,7 +1277,7 @@
 
 #scrollDiv .scroll_text_top .scroll_text_b {
 	font-size: 0.2rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 1.08rem;
 	width: 100%;
@@ -1281,7 +1286,7 @@
 
 #scrollDiv .scroll_text_top .scroll_text_e {
 	font-size: 0.1rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 1.39rem;
 	width: 100%;
@@ -1290,7 +1295,7 @@
 
 #scrollDiv .scroll_text_top .scroll_text_c {
 	font-size: 0.16rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 1.59rem;
 	width: 100%;
@@ -1299,7 +1304,7 @@
 
 #scrollDiv .scroll_text_top .scroll_text_d {
 	font-size: 0.14rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 2.31rem;
     width: 90%;
@@ -1441,7 +1446,7 @@
 
 .swiper-container .scroll_text_b {
 	font-size: 0.2rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 2.65rem;
 	width: 100%;
@@ -1450,16 +1455,16 @@
 
 .swiper-container .scroll_text_e {
 	font-size: 0.1rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
-	top: 2.98rem;
+	top: 2.9rem;
 	width: 100%;
 	text-align: center
 }
 
 .swiper-container .scroll_text_c {
 	font-size: 0.16rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 3.21rem;
 	width: 100%;
@@ -1468,7 +1473,7 @@
 
 .swiper-container .scroll_text_d {
 	font-size: 0.18rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 3.46rem;
 	width: 90%;
@@ -1482,7 +1487,7 @@
 
 .swiper-container .scroll_text_f {
 	font-size: 0.12rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 4.08rem;
 	width: 100%;
@@ -1524,7 +1529,7 @@
 
 .swiper-container .scroll_text_top .scroll_text_b {
 	font-size: 0.2rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 1.08rem;
 	width: 100%;
@@ -1533,7 +1538,7 @@
 
 .swiper-container .scroll_text_top .scroll_text_e {
 	font-size: 0.1rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 1.39rem;
 	width: 100%;
@@ -1542,7 +1547,7 @@
 
 .swiper-container .scroll_text_top .scroll_text_c {
 	font-size: 0.16rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 1.59rem;
 	width: 100%;
@@ -1551,7 +1556,7 @@
 
 .swiper-container .scroll_text_top .scroll_text_d {
 	font-size: 0.18rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	top: 2.31rem;
 	  width: 92%;
@@ -1693,45 +1698,69 @@
 #daily .list_textRow .text_a {
 	position: absolute;
 	top: 1.83rem;
-	width: 100%;
+	width: 90%;
+	left: 5%;
 	font-size: 0.2rem;
 	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 #daily .list_textRow .text_v {
 	position: absolute;
 	top: 2.12rem;
-	width: 100%;
+	width: 90%;
+	left: 5%;
 	font-size: 0.2rem;
 	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 #daily .list_textRow .text_f {
 	position: absolute;
 	top: 2.4rem;
-	width: 100%;
+	width: 90%;
+	left: 5%;
 	font-size: 0.2rem;
 	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 #daily .list_textRow .text_e {
 	position: absolute;
 	top: 2.73rem;
-	width: 100%;
+	width: 90%;
+	left: 5%;
 	text-align: center;
-	font-size: 0.1rem
+	font-size: 0.1rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 #daily .list_textRow .taxt_b {
 	line-height: 0.25rem;
 	position: absolute;
 	top: 3.16rem;
-	width: 100%;
+	width: 90%;
 	text-align: center;
 	font-size: 0.13rem;
-	left: 0;
+	left: 5%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
-
+#daily .list_textRow .taxt_b div{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: relative;
+}
 #daily .list_top .list_textRow {
 	width: 1.8rem;
 	height: 1.8rem;
@@ -1758,7 +1787,7 @@
 #daily .list_top .list_textRow .text_a {
 	position: absolute;
 	top: 0.6rem;
-	width: 100%;
+	width: 90%;
 	font-size: 0.2rem;
 	text-align: center;
 }
@@ -1766,7 +1795,7 @@
 #daily .list_top .list_textRow .text_v {
 	position: absolute;
 	top: 0.93rem;
-	width: 100%;
+	width: 90%;
 	font-size: 0.2rem;
 	text-align: center;
 }
@@ -1774,20 +1803,27 @@
 #daily .list_top .list_textRow .text_e {
 	position: absolute;
 	top: 1.4rem;
-	width: 100%;
+	width: 90%;
 	text-align: center;
-	font-size: 0.1rem
+	font-size: 0.1rem;
+	left: 5%;
 }
 
 #daily .list_top .list_textRow .taxt_b {
 	line-height: 0.25rem;
 	position: absolute;
 	top: 1.8rem;
-	width: 100%;
+	width: 90%;
 	text-align: center;
-	font-size: 0.13rem
+	font-size: 0.13rem;
+	left: 5%;
 }
-
+#daily .list_top .list_textRow .taxt_b div{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: relative;
+}
 
 
 #daily_m {
@@ -1873,33 +1909,49 @@
 #daily_m .list_textRow .text_a {
 	position: absolute;
 	top: 2.45rem;
-	width: 100%;
+	width: 90%;
 	font-size: 0.26rem;
 	text-align: center;
+	left: 5%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 #daily_m .list_textRow .text_v {
 	position: absolute;
 	top: 2.7rem;
-	width: 100%;
+	width: 90%;
 	font-size: 0.26rem;
 	text-align: center;
+	left: 5%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 #daily_m .list_textRow .text_f {
 	position: absolute;
 	top: 1.3rem;
-	width: 100%;
+	width: 90%;
 	font-size: 0.26rem;
 	text-align: center;
+	left: 5%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 #daily_m .list_textRow .text_e {
 	position: absolute;
 	top: 3.15rem;
-	width: 100%;
+	width: 90%;
 	text-align: center;
-	font-size: 0.26rem
+	font-size: 0.26rem;
+	left: 5%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 #daily_m .list_textRow .taxt_g {
@@ -1909,7 +1961,11 @@
 	width: 90%;
     left: 5%;
 	text-align: center;
-	font-size: 0.18rem
+	font-size: 0.18rem;
+	left: 5%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 #daily_m .list_textRow .taxt_b {
 	line-height: 0.26rem;
@@ -1918,9 +1974,18 @@
 	width: 90%;
     left: 5%;
 	text-align: center;
-	font-size: 0.18rem
+	font-size: 0.18rem;
+	left: 5%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
-
+#daily_m .list_textRow .taxt_b div{
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
 #daily_m .list_top .list_textRow {
 	width: 2.38rem;
 	height: 2.38rem;
@@ -1966,7 +2031,7 @@
 	position: absolute;
 	top: 1.45rem;
 	text-align: center;    width: 90%;
-    margin-left: 5%;
+    left: 5%;
 	font-size: 0.26rem
 }
 #daily_m .list_top .list_textRow .text_x {
@@ -2114,7 +2179,11 @@
 	}
 
 }
-
+@media (max-width: 960px) {
+	#nav .nav_tab{
+		margin-left: 1.8rem;
+	}
+}
 @media (max-width: 750px) {
 
 	#practitioner .normalText {
@@ -2125,13 +2194,31 @@
 		width: 100%;
 		text-align: center;
 	  }
-	  #practitioner .specialText {
+	  #practitioner .specialText,#practitioner .specialText_m {
 		font-family: MTCORSVA;
 		font-size: 0.36rem;
 		position: absolute;
 		top: 3.83rem;
 		width: 100%;
 		text-align: center;
+	  }
+	  #vision .text2.text-en-2 {
+		top:2.48rem;
+		width: 90%;
+		left: 5%;
+	  }
+	  #vision .text2.text-pc,#vision .text3.text-pc {
+		  display: none;
+	  }
+	  #vision .text2.text-m-75{
+		  display: block;
+	  }
+	  #practitioner .specialText.specialText_pc{
+		  display: none;
+	  }
+	  #practitioner .specialText_m {
+		  color: #FFF;
+		  top: 3.5rem;
 	  }
 	#headerTop {
 		display: none;
