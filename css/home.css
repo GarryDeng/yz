@@ -1219,8 +1219,9 @@
 	top: 3.46rem;
 	width: 90%;
 	left: 0;
-    margin-left: 5%;
-	text-align: center
+	margin-left: 5%;
+	text-align: justify;
+	/* text-align: center */
 }
 
 #scrollDiv .scroll_text_d div {
@@ -1984,11 +1985,21 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-#daily_m .list_textRow .taxt_b div{
+#daily_m .list_textRow .taxt_b div,#daily_m .list_top .list_textRow .taxt_g div{
 	position: relative;
 	overflow: hidden;
+	/* text-overflow: ellipsis;
+	white-space: nowrap; */
+	height: .5rem;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+	white-space: pre-wrap;
 }
 #daily_m .list_top .list_textRow {
 	width: 2.38rem;
@@ -2060,7 +2071,7 @@
 #daily_m .list_top .list_textRow .taxt_g {
 	line-height: 0.26rem;
 	position: absolute;
-	top: 2.2rem;
+	top: 1.4rem;
 	width: 90%;
     left: 5%;
 	text-align: center;
@@ -2215,9 +2226,11 @@
 	}
 	#daily_m .list_top .list_textRow .text_a{
 		width: 90%;
+		position: relative;
+		padding-top: .4rem;
 	}
 	#daily_m .list_top .list_textRow .text_x{
-		top: 1.35rem;
+		top: .85rem;
 	}
 	#practitioner .normalText {
 		/* font-family: HYZiKuTangYiShanKaiW; */
