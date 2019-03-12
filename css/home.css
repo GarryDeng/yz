@@ -29,7 +29,8 @@
 }
 .newbtn img {  
 	width: .18rem;
-	/* padding:10px 0; */
+	padding:20px;
+	cursor: pointer;
 }
 .newbtn .iconyuandianzhong { 
 	width: .08rem;
@@ -66,7 +67,8 @@
 }
 .daily_btn_w img {  
 	width: 0.21rem; 
-	/* padding:10px 0; */
+	padding: 20px;
+	cursor: pointer;
 }
 /* .daily_btn_w .iconfont { 
 	font-size: 0.14rem;     line-height: 40px;
@@ -1341,7 +1343,12 @@
 	font-size: 0.8rem;
 	font-family: MTCORSVA
 }
-
+.swiper-pagination1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
 #partner_m .partner_a .normalText {
 	width: 100%;
 	margin-top: 0.27rem;
@@ -1837,7 +1844,7 @@
 #daily_m .daily_a .specialText {
 	width: 100%;
 	text-align: center;
-	color: #c69c6d;
+	color: #102a8d;
 	font-size: 0.8rem;
 	font-family: MTCORSVA
 }
@@ -2062,7 +2069,7 @@
 
 
 
-#partner_m .swiper-container {
+#partner_m .swiper-container,#partner_m .pa-pt-let {
 	width: 100%;
 	height: 100%;
 	margin-top: 0.95rem !important;

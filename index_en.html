@@ -586,7 +586,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="swiper-pagination"></div>
+			<div class="swiper-pagination1"></div>
 		</div>
 	</div>
 
@@ -736,7 +736,7 @@
 			<div class="specialText">Investment Diary</div>
 			<!--<div class="normalText">投资日志</div>-->
 		</div>
-		<div class="swiper-container ishide">
+		<div class="swiper-container swiper-container2 ishide">
 			<div class="swiper-wrapper" class="scrollbox">
 				<div class="swiper-slide" style="margin-left:-2%">
 					<ul class="scroll_a" >
@@ -886,7 +886,7 @@
 				</div>
 			</div>
 			<!-- Add Pagination -->
-			<div class="swiper-pagination"></div>
+			<div class="swiper-pagination swiper-pagination2"></div>
 		</div>
 	</div>
 
@@ -955,11 +955,19 @@
 	</div>
 	<div id="footer">© 2018 元真价值投资 粤ICP证080268号</div>
 	<script>
-		var swiper = new Swiper('.swiper-container', {
-			pagination: {
-				el: '.swiper-pagination',
-			},
-		});
+		$(function(){
+			var swiper = new Swiper('.swiper-container2', {
+				pagination: {
+					el: '.swiper-pagination2',
+				},
+			});
+			var swiperPa = new Swiper('.pa-pt-let', {
+				pagination: {
+					el: '.swiper-pagination1',
+				},
+			});
+		})
+		
 		// window.onresize = function () {
 		// 	var seeUser =  new Swiper('.scrollbox-user', {
 		// 		direction : 'vertical',
