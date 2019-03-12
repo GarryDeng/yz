@@ -8,7 +8,8 @@
     font-size: 0.21rem;
 }
 #practitioner .normalText{
-    font-size: 0.42rem;
+    font-size: 0.39rem;
+    letter-spacing: 3px;
 }
 #area .area_content .title,#area .area_left .normalText,#partner .partner_left .normalText{
     font-size: 0.21rem;
