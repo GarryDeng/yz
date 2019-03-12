@@ -1,0 +1,81 @@
+#nav{
+    font-size: 0.14rem;
+}
+#founder .founder_right{
+    font-size: 0.15rem;
+}
+#founder .founder_left .normalText{
+    font-size: 0.21rem;
+}
+#practitioner .normalText{
+    font-size: 0.45rem;
+}
+#area .area_content .title,#area .area_left .normalText,#partner .partner_left .normalText{
+    font-size: 0.21rem;
+}
+#area .area_content .subtext{
+    font-size: 0.13rem;
+}
+#vision .text1{
+    font-size: 0.27rem;
+}
+#vision .text2,#vision .text3{
+    font-size: 0.17rem;
+}
+#vision .text4{
+    font-size: 0.27rem;
+}
+#vision .textbox{
+    font-size: 0.17rem;
+}
+#scrollDiv .scroll_text_top .scroll_text_b{
+    font-size: 0.17rem;
+}
+#scrollDiv .scroll_text_top .scroll_text_c{
+    font-size: 0.13rem;
+}
+#scrollDiv .scroll_text_top .scroll_text_d{
+    font-size: 0.11rem;
+}
+#scrollDiv .scroll_text_a{
+    font-size: 0.27rem;
+}
+#scrollDiv .scroll_text_c{
+    font-size: 0.13rem;
+}
+#scrollDiv .scroll_text_d{
+    font-size: 0.11rem;
+}
+#scrollDiv .scroll_text_b{
+    font-size: 0.17rem;
+}
+#daily .list_textRow .text_a{
+    font-size: 0.17rem;
+}
+#daily .list_textRow .text_v{
+    font-size: 0.17rem;
+}
+#daily .list_textRow .taxt_b{
+    font-size: 0.1rem;
+}
+#daily .list_top .list_textRow .text_a{
+    font-size: 0.17rem;
+}
+#daily .list_top .list_textRow .text_v{
+    font-size: 0.17rem;
+}
+#daily .list_top .list_textRow .taxt_b{
+    font-size: 0.1rem;
+}
+#contact .content_tab_a .content_tab_title,#contact .content_tab_b .content_tab_title{
+    font-size: 0.09rem;
+}
+#contact .content_tab_a .content_tab_subtext{
+    font-size: 0.13rem;
+}
+#contact .content_tab_b .content_tab_subtext1{
+    font-size: 0.13rem;
+}
+#footer{
+    font-size: 0.07rem;
+}

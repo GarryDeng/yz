@@ -1220,8 +1220,8 @@
 	width: 90%;
 	left: 0;
 	margin-left: 5%;
-	text-align: justify;
-	/* text-align: center */
+	/* text-align: justify; */
+	text-align: center
 }
 
 #scrollDiv .scroll_text_d div {
