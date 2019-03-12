@@ -266,7 +266,9 @@
 
 #founder .founder_left .normalText {
 	margin-top: 0.38rem;
-	font-family: HYZiKuTangYiShanKaiW;position: absolute;
+	/* font-family: HYZiKuTangYiShanKaiW; */
+	position: absolute;
+	color: #c69c6d;
 	top:4.43rem;
 	left:3.63rem;
 }
@@ -313,9 +315,11 @@
 
 #founder_m .founder_left {
 	color: #c69c6d;
+	padding-bottom: .3rem;
 }
 
 #founder_m .founder_left .specialText {
+	color: #102a8d;
 	font-size: 0.8rem;
 	font-family: MTCORSVA
 }
@@ -332,7 +336,7 @@
 	text-align: left;
 	font-family: HYZiKuTangYiShanKaiW;
 	margin: 0 auto;
-	line-height: 1.7em;
+	line-height: 1.4em;
 	color: #666666;
 	font-size: 0.3rem;
 }
@@ -412,7 +416,7 @@
 }
 
 #area .area_left .normalText {
-	color: #102a8d;
+	color: #c69c6d;
 	font-size: 0.24rem;
 	font-family: HYZiKuTangYiShanKaiW;
 }
@@ -483,7 +487,7 @@
 	width: 100%;
 	margin-top: 1.11rem;
 	text-align: center;
-	color: #c69c6d;
+	color: #102a8d;
 	font-size: 0.8rem;
 	font-family: MTCORSVA
 }
@@ -731,7 +735,7 @@
 }
 
 #partner .partner_left .normalText {
-	color: #102a8d;
+	color: #c69c6d;
 	font-size: 0.24rem;
 	font-family: HYZiKuTangYiShanKaiW;
 }
@@ -879,25 +883,7 @@
 	font-size: 0.3rem;
 	font-family: MTCORSVA;
 	position: absolute;
-	top: 0.78rem;
-	width: 100%;
-	text-align: center
-}
-
-#scrollDiv .scroll_text_top .scroll_text_b {
-	font-size: 0.2rem;
-	/* font-family: HYZiKuTangYiShanKaiW; */
-	position: absolute;
-	top: 1.08rem;
-	width: 100%;
-	text-align: center
-}
-
-#scrollDiv .scroll_text_top .scroll_text_e {
-	font-size: 0.1rem;
-	/* font-family: HYZiKuTangYiShanKaiW; */
-	position: absolute;
-	top: 1.39rem;
+	top: 0.5rem;
 	width: 100%;
 	text-align: center
 }
@@ -1057,7 +1043,7 @@
 }
 
 #partner .partner_left .normalText {
-	color: #102a8d;
+	/* color: #102a8d; */
 	font-size: 0.24rem;
 	font-family: HYZiKuTangYiShanKaiW;
 }
@@ -1198,15 +1184,20 @@
 	position: absolute;
 	top: 2.65rem;
 	width: 100%;
-	text-align: center
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 #scrollDiv .scroll_text_e {
 	font-size: 0.1rem;
 	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
-	top: 2.98rem;
+	top: 2.93rem;
 	width: 100%;
+	left: 0;
+	line-height: .3rem;
 	text-align: center
 }
 
@@ -1281,16 +1272,22 @@
 	position: absolute;
 	top: 1.08rem;
 	width: 100%;
-	text-align: center
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 #scrollDiv .scroll_text_top .scroll_text_e {
 	font-size: 0.1rem;
 	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
-	top: 1.39rem;
+	top: 1.32rem;
 	width: 100%;
-	text-align: center
+	text-align: center;
+	left:0;
+	height: .3rem;
+	line-height: .3rem;
 }
 
 #scrollDiv .scroll_text_top .scroll_text_c {
@@ -1340,7 +1337,7 @@
 #partner_m .partner_a .specialText {
 	width: 100%;
 	text-align: center;
-	color: #c69c6d;
+	color: #102a8d;
 	font-size: 0.8rem;
 	font-family: MTCORSVA
 }
@@ -1609,7 +1606,7 @@
 }
 
 #daily .daily_left .normalText {
-	color: #102a8d;
+	color: #c69c6d;
 	font-size: 0.24rem;
 	font-family: HYZiKuTangYiShanKaiW;
 }
@@ -2185,9 +2182,38 @@
 	}
 }
 @media (max-width: 750px) {
-
+	.swiper-container .scroll_text_a{
+		top: 2.5rem;
+	}
+	.swiper-container .scroll_text_e{
+		top: 2.82rem;
+	}
+	.swiper-container .scroll_text_top .scroll_text_a{
+		top: .3rem;
+	}
+	.swiper-container .scroll_text_top .scroll_text_e{
+		top: .7rem;
+	}
+	.swiper-container .scroll_text_top .scroll_text_c{
+		top: 1.2rem;
+	}
+	.swiper-container .scroll_text_top .scroll_text_d{
+		top: 1.7rem;
+	}
+	#daily_m .list_textRow .text_e{
+		top: 3rem;
+	}
+	#daily_m .list_top .list_textRow .text_e{
+		top: 1.3rem;
+	}
+	#daily_m .list_top .list_textRow .text_a{
+		width: 90%;
+	}
+	#daily_m .list_top .list_textRow .text_x{
+		top: 1.35rem;
+	}
 	#practitioner .normalText {
-		font-family: HYZiKuTangYiShanKaiW;
+		/* font-family: HYZiKuTangYiShanKaiW; */
 		font-size: 0.48rem;
 		position: absolute;
 		top: 3.07rem;
@@ -2206,6 +2232,7 @@
 		top:2.48rem;
 		width: 90%;
 		left: 5%;
+		text-align: justify;
 	  }
 	  #vision .text2.text-pc,#vision .text3.text-pc {
 		  display: none;
@@ -2324,13 +2351,15 @@
 	}
 	
 	#vision .text3 {
-		width: 80%;
-		margin: 0 10%;
+		width: 90%;
+		margin: 0;
 		color: #fff;
 		font-size: 0.28rem;
 		position: absolute;
 		text-align: center;
 		top: 3.26rem;
+		left: 5%;
+		text-align: justify;
 	}
 	
 	#vision .text4 {
