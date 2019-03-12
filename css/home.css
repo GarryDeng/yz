@@ -267,11 +267,11 @@
 }
 
 #founder .founder_left .normalText {
-	margin-top: 0.38rem;
+	/* margin-top: 0.38rem; */
 	/* font-family: HYZiKuTangYiShanKaiW; */
 	position: absolute;
 	color: #c69c6d;
-	top:4.43rem;
+	top:4.08rem;
 	left:3.63rem;
 }
 
@@ -420,7 +420,8 @@
 #area .area_left .normalText {
 	color: #c69c6d;
 	font-size: 0.24rem;
-	font-family: HYZiKuTangYiShanKaiW;
+	padding-top: 0.05rem;
+	/* font-family: HYZiKuTangYiShanKaiW; */
 }
 
 #area .area_content {
@@ -476,7 +477,8 @@
 	font-size: 0.16rem;
 	width: 100%;
 	line-height: 0.36rem;
-	color: #666
+	color: #666;
+	text-align: justify;
 }
 
 #area_m {

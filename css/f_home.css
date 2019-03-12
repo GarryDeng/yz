@@ -8,7 +8,7 @@
     font-size: 0.21rem;
 }
 #practitioner .normalText{
-    font-size: 0.45rem;
+    font-size: 0.42rem;
 }
 #area .area_content .title,#area .area_left .normalText,#partner .partner_left .normalText{
     font-size: 0.21rem;
@@ -78,4 +78,7 @@
 }
 #footer{
     font-size: 0.07rem;
+}
+#daily .list_textRow .text_f{
+    font-size: 0.17rem;
 }
