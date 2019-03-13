@@ -16,8 +16,18 @@
     top: 1.5rem;
 }
 @media (max-width: 750px) {
-    *{
+    #founder_m .founder_right div,#area_m .area_list .text,#contact_m,
+    #vision .text3,#vision .text2.text-en-2,#vision .textbox .box{
         font-weight: 200;
+    }
+    #vision .text3,#vision .text2.text-en-2{
+        width: 85%;
+        left: 7.5%;
+    }
+    #area_m .area_list .text{
+        width: 85%;
+        margin: 0 auto;
+        text-align: justify;
     }
     #practitioner .specialText_m {
         top: 3.25rem;
@@ -57,6 +67,9 @@
     #daily_m .list_top .list_textRow .taxt_b{
         height: 1.33rem;
         overflow-y: auto;
+    }
+    .swiper-container .scroll_text_top .scroll_text_e{
+        font-size: .26rem;
     }
     #daily_m .list_textRow .taxt_b{
         overflow-y: auto;
