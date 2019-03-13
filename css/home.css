@@ -2232,7 +2232,7 @@
 	#daily_m .list_top .list_textRow .text_a{
 		width: 90%;
 		position: relative;
-		padding-top: .4rem;
+		/* padding-top: .4rem; */
 	}
 	#daily_m .list_top .list_textRow .text_x{
 		top: .85rem;

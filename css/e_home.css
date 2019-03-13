@@ -59,4 +59,9 @@
         overflow-y: auto;
         height: 1.33rem;
     }
+    .swiper-container .scroll_text_d{
+        height: 1.4rem;
+        overflow-y: auto;
+        top: 3.56rem;
+    }
 }
