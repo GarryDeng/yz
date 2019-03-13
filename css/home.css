@@ -2406,7 +2406,20 @@
 	.swiper-container .scroll_text_e{
 		font-size: .26rem;
 	}
-
+	.swiper-container .scroll_text_top .scroll_text_e{
+		font-size: 0.26rem;
+	}
+	#daily_m .list_textRow .taxt_b div, #daily_m .list_top .list_textRow .taxt_g div{
+        height: auto;
+        /* overflow: auto; */
+        -webkit-line-clamp:6;
+	}
+	#daily_m .list_top .list_textRow .text_a {
+		top: 0.4rem;
+		padding-top: 0;
+		width: 70%;
+		left: 15%;
+	}
 }
 #partner_m .swiper-pagination{
 	display: flex;
