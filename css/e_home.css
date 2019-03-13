@@ -16,6 +16,9 @@
     top: 1.5rem;
 }
 @media (max-width: 750px) {
+    *{
+        font-weight: 200;
+    }
     #practitioner .specialText_m {
         top: 3.25rem;
     }
