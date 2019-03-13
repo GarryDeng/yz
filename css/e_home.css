@@ -15,6 +15,10 @@
 #daily .list_top .list_textRow .taxt_b{
     top: 1.5rem;
 }
+#founder .founder_right div,#area .area_content .subtext,#contact,
+#vision .text3,#vision .text2,#vision .textbox .box{
+    font-weight: 200;
+}
 @media (max-width: 750px) {
     #founder_m .founder_right div,#area_m .area_list .text,#contact_m,
     #vision .text3,#vision .text2.text-en-2,#vision .textbox .box{
