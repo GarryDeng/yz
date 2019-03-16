@@ -2235,7 +2235,10 @@
 		/* padding-top: .4rem; */
 	}
 	#daily_m .list_top .list_textRow .text_x{
-		top: .85rem;
+		top: 1.3rem;
+	}
+	#daily_m .list_top .list_textRow .taxt_g{
+		top: 1.9rem;
 	}
 	#practitioner .normalText {
 		/* font-family: HYZiKuTangYiShanKaiW; */
