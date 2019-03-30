@@ -9,6 +9,9 @@
     line-height: 1.2em;
     padding-bottom: .1rem;
 }
+#vision.vis-old .textbox .box div, #vision.vis-old .textbox .box span{
+    font-size: .18rem;
+}
 #daily .list_top .list_textRow .text_e{
     top: 1.1rem;
 }
