@@ -71,9 +71,16 @@
         /* overflow: auto; */
         -webkit-line-clamp:6;
     }
-    #daily_m .list_top .list_textRow .taxt_b{
+    #daily_m .list_top .list_textRow .taxt_b,#daily_m .list_top .list_textRow .taxt_g{
         height: 1.33rem;
         overflow-y: auto;
+        display: block;
+    }
+    #daily_m .list_top .list_textRow .taxt_g{
+        top: 1.7rem;
+    }
+    #daily_m .list_top .list_textRow .text_x{
+        top: 1rem;
     }
     .swiper-container .scroll_text_top .scroll_text_e{
         font-size: .26rem;
@@ -86,5 +93,13 @@
         height: 1.4rem;
         overflow-y: auto;
         top: 3.56rem;
+    }
+    #vision .text2.text-m-75{
+        font-size: .2rem;
+        width: 85%;
+        margin: 0 auto;
+        left: 7.5%;
+        text-align: justify;
+        top: 2.5rem;
     }
 }

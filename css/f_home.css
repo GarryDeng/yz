@@ -21,13 +21,15 @@
     font-size: 0.27rem;
 }
 #vision .text2,#vision .text3{
-    font-size: 0.17rem;
+    font-size: 0.26rem;
+    line-height: 1.4em;
 }
 #vision .text4{
     font-size: 0.27rem;
 }
 #vision .textbox{
     font-size: 0.17rem;
+    line-height: 1.3em;
 }
 #scrollDiv .scroll_text_top .scroll_text_b{
     font-size: 0.17rem;
@@ -85,4 +87,13 @@
 }
 #contact .content_tab_b .content_tab_subtext{
     font-size: 0.13rem;
+}
+@media (max-width: 750px){
+    #vision .textbox .box {
+        margin-bottom: .35rem;
+        line-height: 0.36rem;
+    }
+    #vision .textbox .box div{
+        padding-top: .12rem;
+    }
 }

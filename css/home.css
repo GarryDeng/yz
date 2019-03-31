@@ -494,7 +494,8 @@
 	text-align: center;
 	color: #102a8d;
 	font-size: 0.8rem;
-	font-family: MTCORSVA
+	font-family: MTCORSVA;
+	text-indent: .3rem;
 }
 
 #area_m .normalText {
@@ -632,7 +633,8 @@
 }
 
 #vision .textbox .box {
-	margin-right: 0.25rem;
+	margin-right: 0.125rem;
+	margin-left: 0.125rem;
 	width: 0.92rem;
 	height: 0.92rem;
 	line-height: 0.32rem;
@@ -668,6 +670,9 @@
 	font-size: .22rem;
 	padding: 0;
 	margin: 0;
+}
+#vision.vis-old .textbox .box div span{
+	font-size: .28rem;
 }
 #vision .textbox .box img {
 	width: 0.92rem;
@@ -1747,7 +1752,7 @@
 }
 #daily .list_textRow .text_a {
 	position: absolute;
-	top: 1.83rem;
+	top: 2rem;
 	width: 90%;
 	left: 5%;
 	font-size: 0.2rem;
@@ -2248,6 +2253,17 @@
 	#vision.vis-old {
 		width: 7.5rem;
 		margin: 0 auto;
+	}
+	#vision .text4-4{
+		display: none;
+	}
+	.swiper-container .scroll_text_d{
+		height: 1.3rem;
+		overflow-y: auto;
+		margin-top: .27rem;
+	}
+	#founder_m .founder_left .normalText{
+		margin-bottom: .42rem;
 	}
 	#vision .textbox .box{
 		margin-bottom: .35rem;
