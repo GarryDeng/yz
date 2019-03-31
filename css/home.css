@@ -1857,7 +1857,7 @@
 
 #daily .list_top .list_textRow .text_e {
 	position: absolute;
-	top: 1.4rem;
+	top: 1.2rem;
 	width: 90%;
 	text-align: center;
 	font-size: 0.1rem;
@@ -1867,7 +1867,7 @@
 #daily .list_top .list_textRow .taxt_b {
 	line-height: 0.25rem;
 	position: absolute;
-	top: 1.8rem;
+	top: 1.6rem;
 	width: 90%;
 	text-align: center;
 	font-size: 0.13rem;
