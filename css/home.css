@@ -2467,9 +2467,10 @@
 		position: absolute;
 		text-align: center;
 		top: 5.16rem;
-	} #vision .textbox {
+	} 
+	#vision .textbox {
 		width: 94%;
-		margin-left: 5%;
+		margin-left: 3%;
 		height: 0.92rem;
 		position: absolute;
 		top: 6.1rem;
