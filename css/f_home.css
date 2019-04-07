@@ -21,7 +21,7 @@
     font-size: 0.27rem;
 }
 #vision .text2,#vision .text3{
-    font-size: 0.26rem;
+    font-size: 0.2rem;
     line-height: 1.4em;
 }
 #vision .text4{
@@ -89,11 +89,17 @@
     font-size: 0.13rem;
 }
 @media (max-width: 750px){
+    #founder_m .founder_right{
+        font-size: 0.2rem;
+    }
     #vision .textbox .box {
         margin-bottom: .35rem;
         line-height: 0.36rem;
     }
     #vision .textbox .box div{
         padding-top: .12rem;
+    }
+    #daily_m .list_textRow .text_a{
+        font-size: .22rem;
     }
 }
