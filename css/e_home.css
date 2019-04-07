@@ -9,9 +9,12 @@
     line-height: 1.2em;
     padding-bottom: .1rem;
 }
+#vision.vis-old .textbox .box div span{
+    font-size: .24rem;
+}
 #vision.vis-old .textbox .box div, #vision.vis-old .textbox .box span{
-    font-size: .18rem;
-    font-weight: bold;
+    font-size: .2rem;
+    /* font-weight: 400; */
 }
 #daily .list_top .list_textRow .text_e{
     top: 1.1rem;
@@ -40,21 +43,21 @@
     #practitioner .specialText_m {
         top: 3.25rem;
     }
-    #vision .text1{
+    /* #vision .text1{
         top: 1.28rem;
-    }
+    } */
     #vision .text2.text-en-2{
         top: 2.28rem;
     }
     #vision .text3{
         top: 3.06rem;
     }
-    #vision .text4{
+    /* #vision .text4{
         top: 4.86rem;
-    }
-    #vision .textbox{
+    } */
+    /* #vision .textbox{
         top: 5.9rem;
-    }
+    } */
     #daily_m .list_top .list_textRow .text_a{
         top: 0.4rem;
         padding-top: 0;
@@ -101,6 +104,6 @@
         margin: 0 auto;
         left: 7.5%;
         text-align: justify;
-        top: 2.5rem;
+        /* top: 2.5rem; */
     }
 }

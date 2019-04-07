@@ -588,7 +588,7 @@
 	width: 80%;
 	margin: 0 10%;
 	color: #fff;
-	font-size: 0.18rem;
+	font-size: 0.2rem;
 	position: absolute;
 	text-align: center;
 	top: 3.26rem;
@@ -655,6 +655,7 @@
 	width: 1.4rem;
 	height: 1.4rem;
 	display: flex;
+	line-height:0.16rem;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -662,7 +663,7 @@
 	top: 5.48rem;
 }
 #vision.vis-old .text3{
-	top: 6rem;
+	top: 5.79rem;
 }
 #vision.vis-old .textbox .box div,#vision.vis-old .textbox .box span{
 	width: 1.4rem;
@@ -2267,6 +2268,7 @@
 	}
 	#vision .textbox .box{
 		margin-bottom: .35rem;
+		line-height: 0.32rem;
 	}
 	.swiper-container .scroll_text_a{
 		top: 2.5rem;
@@ -2445,7 +2447,7 @@
 		font-size: 0.28rem;
 		position: absolute;
 		text-align: center;
-		top: 2.83rem;
+		top: 2.43rem;
 	}
 	
 	#vision .text3 {
@@ -2473,7 +2475,7 @@
 		margin-left: 3%;
 		height: 0.92rem;
 		position: absolute;
-		top: 6.1rem;
+		top: 6.41rem;
 		font-size: 0.2rem;
 		text-align: center;
 	}

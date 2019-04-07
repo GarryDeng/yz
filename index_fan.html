@@ -26,9 +26,17 @@
 				url('./font/bzft.ttf') format('truetype'),
 				url('./font/bzft.svg') format('svg');
 		} */
-		
-		*{font-family: '宋体',arial,georgia,verdana,helvetica,sans-serif;}
-		.normalText,.subtext,.title {font-family:"宋体", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif!important;}
+
+		* {
+			font-family: '宋体', arial, georgia, verdana, helvetica, sans-serif;
+		}
+
+		.normalText,
+		.subtext,
+		.title {
+			font-family: "宋体", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+		}
+
 		/* #area .area_content div {
 			width: 42%;
 			margin-right: 10px;
@@ -36,19 +44,19 @@
 	</style>
 	<script>
 
-        function rem () {
-            var whdef = 100 / 1920; // 表示1920的設計圖,使用100PX的默認值
-            var whdef_m = 100 / 750;
-            var wW = window.innerWidth; // 當前窗口的寬度
-            var rem = wW * whdef;// 以默認比例值乘以當前窗口寬度,得到該寬度下的相應FONT-SIZE值
-            if (wW > 750) {
-                document.getElementsByTagName('html')[0].style.fontSize = rem + 'px';
-            } else {
-                document.getElementsByTagName('html')[0].style.fontSize = whdef_m * wW + 'px';
-            }
-        }
-        rem ();
-        window.addEventListener('resize',function(){rem ()})
+		function rem() {
+			var whdef = 100 / 1920; // 表示1920的設計圖,使用100PX的默認值
+			var whdef_m = 100 / 750;
+			var wW = window.innerWidth; // 當前窗口的寬度
+			var rem = wW * whdef;// 以默認比例值乘以當前窗口寬度,得到該寬度下的相應FONT-SIZE值
+			if (wW > 750) {
+				document.getElementsByTagName('html')[0].style.fontSize = rem + 'px';
+			} else {
+				document.getElementsByTagName('html')[0].style.fontSize = whdef_m * wW + 'px';
+			}
+		}
+		rem();
+		window.addEventListener('resize', function () { rem() })
         // window.onresize = function () {
         // 	var wW = window.innerWidth; // 當前窗口的寬度
         // 	var rem = wW * whdef;// 以默認比例值乘以當前窗口寬度,得到該寬度下的相應FONT-SIZE值
@@ -63,305 +71,358 @@
 </head>
 
 <body>
-<div id="headerTop">
-	<img src="img/pc1.jpg" />
-</div>
-<div id="headerTop_m">
-	<img src="img/p1.jpg" />
-</div>
-<!-- 導航 -->
-<div id="nav">
+	<div id="headerTop">
+		<img src="img/pc1.jpg" />
+	</div>
+	<div id="headerTop_m">
+		<img src="img/p1.jpg" />
+	</div>
+	<!-- 導航 -->
+	<div id="nav">
 		<span class="nav_logo">
-			<a href="#"><img src="img/logo_m_m.png"></a>
+			<a href="#">
+				<img src="img/logo_m_m.png">
+			</a>
 		</span>
-	<span class="nav_tab">
+		<span class="nav_tab">
 			<span id="tofounder" href="#founder">元真創始人的話</span>
 			<span id="toarea">關註領域</span>
-			<span  id="topartner">關註領域</span>
-			<span  id="todaily">投資日誌</span>
+			<span id="topartner">關註領域</span>
+			<span id="todaily">投資日誌</span>
 			<span id="tocontact">聯系我們</span>
 			<div class="sizeAct">
-				<img src="img/fan_act.png" class="sizeIcon" id="jian_act"/>
-				<img src="img/fan.png"  class="sizeIcon ishide" id="jian"/>
-				<a href="index.html"><img src="img/jian.png"      class="sizeIcon ishide" id="fan" /></a>
-				<a href="index.html"><img src="img/jian_act.png"  class="sizeIcon ishide" id="fan_act" /></a>
-				<a href="index_en.html"><img src="img/en.png"       class="sizeIcon ishide" id="en" /></a>
-				<a href="index_en.html"><img src="img/en_act.png"   class="sizeIcon ishide" id="en_act" /></a>
+				<img src="img/fan_act.png" class="sizeIcon" id="jian_act" />
+				<img src="img/fan.png" class="sizeIcon ishide" id="jian" />
+				<a href="index.html">
+					<img src="img/jian.png" class="sizeIcon ishide" id="fan" />
+				</a>
+				<a href="index.html">
+					<img src="img/jian_act.png" class="sizeIcon ishide" id="fan_act" />
+				</a>
+				<a href="index_en.html">
+					<img src="img/en.png" class="sizeIcon ishide" id="en" />
+				</a>
+				<a href="index_en.html">
+					<img src="img/en_act.png" class="sizeIcon ishide" id="en_act" />
+				</a>
 			</div>
 		</span>
-</div>
-<div id="nav_m">
+	</div>
+	<div id="nav_m">
 		<span class="nav_logo">
-			<a href="#"><img src="img/logo_m_m.png"></a>
+			<a href="#">
+				<img src="img/logo_m_m.png">
+			</a>
 		</span>
-	<span class="nav_menu">
+		<span class="nav_menu">
 			<img src="img/menu.jpg" id="menubtn" />
 		</span>
-</div>
-<!-- 菜單 -->
-<div id="toggleNav">
-	<img src="img/close.png" id="close_btn" />
-	<div id="nav_right_m" class="nav_right nav_right_mo">
-		<dir style="width:100%;height: 60px;"></dir>
-		<a href="#founder_m">
-			<div class="nav_tab1 ">元真創始人的話</div>
-		</a>
-		<a href="#area_m">
-			<div class="nav_tab2">關註領域</div>
-		</a>
-		<a href="#partner_m">
-			<div class="nav_tab3">元真夥伴</div>
-		</a>
-		<a href="#daily_m">
-			<div class="nav_tab4">投資日誌</div>
-		</a>
-		<a href="#contact_m">
-			<div class="nav_tab5">聯系我們</div>
-		</a>
-		<div class="nav_btn">
-			<a href="./index.html"><img src="img/jian.png" class="fontIcon1" /></a>
-			<a href="./index_fan.html"><img src="img/fan_act.png" class="fontIcon2 " /></a>
-			<a href="./index_en.html"><img src="img/en.png" class="fontIcon3 " /></a>
+	</div>
+	<!-- 菜單 -->
+	<div id="toggleNav">
+		<img src="img/close.png" id="close_btn" />
+		<div id="nav_right_m" class="nav_right nav_right_mo">
+			<dir style="width:100%;height: 60px;"></dir>
+			<a href="#founder_m">
+				<div class="nav_tab1 ">元真創始人的話</div>
+			</a>
+			<a href="#area_m">
+				<div class="nav_tab2">關註領域</div>
+			</a>
+			<a href="#partner_m">
+				<div class="nav_tab3">元真夥伴</div>
+			</a>
+			<a href="#daily_m">
+				<div class="nav_tab4">投資日誌</div>
+			</a>
+			<a href="#contact_m">
+				<div class="nav_tab5">聯系我們</div>
+			</a>
+			<div class="nav_btn">
+				<a href="./index.html">
+					<img src="img/jian.png" class="fontIcon1" />
+				</a>
+				<a href="./index_fan.html">
+					<img src="img/fan_act.png" class="fontIcon2 " />
+				</a>
+				<a href="./index_en.html">
+					<img src="img/en.png" class="fontIcon3 " />
+				</a>
+			</div>
 		</div>
 	</div>
-</div>
 
 
-<!-- 創始人的話 -->
-<div id="founder">
-	<div class="founder_left">
-		<div class="specialText1">About</div>
-		<div class="specialText2">ISVI</div>
-		<div class="normalText pd10">元真創始人的話</div>
+	<!-- 創始人的話 -->
+	<div id="founder">
+		<div class="founder_left">
+			<div class="specialText1">About</div>
+			<div class="specialText2">ISVI</div>
+			<div class="normalText pd10">元真創始人的話</div>
+		</div>
+		<div class="founder_right">
+			<div style="color:#152a8b;font-size:.26rem;margin-bottom:.3rem;">中華智慧踐行者</div>
+			<div>經過近十年的鉆研思考和積累沈澱，"元真科研"於2016年初正式成立。 "元真"二字淺顯易懂，元始的且本真的。 作為中華文化智慧的踐行者，我們認為中華文化智慧是我們中華民族最元始最本真的科學，是我們中華民族最偉大的瑰寶，也是元真獨壹無二的核心算法的基石。</div>
+			<div>元真科研又經過十八個月的梳理和聚焦，元真科研正式更名為
+				<em class="label-c" style="color: #a67c52">“元真價值投資”</em>，專註於優質初創企業的發掘和投資，我們深信，早期股權投資有著無限的機會和可能，尋找和哺育中國未來的優秀企業家，陪伴他們實現人生價值、企業價值、社會價值是我們的責任和使命。</div>
+			<div>我們堅守自己固有的發展節奏和"以人為本"的原點投資理念，低調而穩健，追求更為紮實及長久的規劃發展，不急於壹時壹刻，與中華文化智慧體系相結合，為初創企業股權投資的未來開創更為廣闊的壹番新天地。我們信奉精品哲學，遵守重質不重量，細工慢活的投資原則，主旨只有壹個，即"價值投資"。</div>
+		</div>
+		<img src="img/pc2.png" class="founder_img">
 	</div>
-	<div class="founder_right">
-		<div style="color:#152a8b;font-size:.26rem;margin-bottom:.3rem;">中華智慧踐行者</div>
-		<div>經過近十年的鉆研思考和積累沈澱，"元真科研"於2016年初正式成立。 "元真"二字淺顯易懂，元始的且本真的。 作為中華文化智慧的踐行者，我們認為中華文化智慧是我們中華民族最元始最本真的科學，是我們中華民族最偉大的瑰寶，也是元真獨壹無二的核心算法的基石。</div>
-		<div>元真科研又經過十八個月的梳理和聚焦，元真科研正式更名為<em class="label-c" style="color: #a67c52">“元真價值投資”</em>，專註於優質初創企業的發掘和投資，我們深信，早期股權投資有著無限的機會和可能，尋找和哺育中國未來的優秀企業家，陪伴他們實現人生價值、企業價值、社會價值是我們的責任和使命。</div>
-		<div>我們堅守自己固有的發展節奏和"以人為本"的原點投資理念，低調而穩健，追求更為紮實及長久的規劃發展，不急於壹時壹刻，與中華文化智慧體系相結合，為初創企業股權投資的未來開創更為廣闊的壹番新天地。我們信奉精品哲學，遵守重質不重量，細工慢活的投資原則，主旨只有壹個，即"價值投資"。</div>
+	<div id="founder_m">
+		<div class="founder_left">
+			<div class="specialText">About</div>
+			<div class="specialText">ISVI</div>
+			<div class="normalText ">元真創始人的話</div>
+		</div>
+		<div class="founder_right">
+			<div class="founder_text" style="color:#152a8b;text-align:center;font-size:.36rem;margin-bottom:.3rem;">中華智慧踐行者</div>
+			<div class="founder_text">經過近十年的鉆研思考和積累沈澱，“元真科研”於2016年初正式成立。“元真”二字淺顯易懂，元始的且本真的。作為中華文化智慧的踐行者，我們認為中華文化智慧是我們中華民族最元始最本真的科學，是我們中華民族最偉大的瑰寶，也是元真獨壹無二的核心算法的基石。</div>
+			<div class="founder_text founder_text_a  hide_m">元真科研又經過十八個月的梳理和聚焦，元真科研正式更名為
+				<em class="label-c" style="color: #a67c52">“元真價值投資”</em>，專註於優質初創企業的發掘和投資，我們深信，早期股權投資有著無限的機會和可能，尋找和哺育中國未來的優秀企業家，陪伴他們實現人生價值、企業價值、社會價值是我們的責任和使命。</div>
+			<div class="founder_text founder_text_a hide_m">我們堅守自己固有的發展節奏和“以人為本”的原點投資理念，低調而穩健，追求更為紮實及長久的規劃發展，不急於壹時壹刻，與中華文化智慧體系相結合，為初創企業股權投資的未來開創更為廣闊的壹番新天地。我們信奉精品哲學，遵守重質不重量，細工慢活的投資原則，主旨只有壹個，即“價值投資”。</div>
+			<div class="toShow">
+				<img src="img/1.jpg" />點擊展開</div>
+			<div class="tohide hide_m">
+				<img src="img/2.jpg" />收起</div>
+		</div>
+		<img src="img/pc2.png" class="founder_img">
 	</div>
-	<img src="img/pc2.png" class="founder_img">
-</div>
-<div id="founder_m">
-	<div class="founder_left">
-		<div class="specialText">About</div>
-		<div class="specialText">ISVI</div>
-		<div class="normalText ">元真創始人的話</div>
-	</div>
-	<div class="founder_right">
-			<div class="founder_text" style="color:#152a8b;text-align:center;font-size:.3rem;margin-bottom:.1rem;">中華智慧踐行者</div>
-		<div class="founder_text">經過近十年的鉆研思考和積累沈澱，“元真科研”於2016年初正式成立。“元真”二字淺顯易懂，元始的且本真的。作為中華文化智慧的踐行者，我們認為中華文化智慧是我們中華民族最元始最本真的科學，是我們中華民族最偉大的瑰寶，也是元真獨壹無二的核心算法的基石。</div>
-		<div class="founder_text founder_text_a  hide_m">元真科研又經過十八個月的梳理和聚焦，元真科研正式更名為<em class="label-c" style="color: #a67c52">“元真價值投資”</em>，專註於優質初創企業的發掘和投資，我們深信，早期股權投資有著無限的機會和可能，尋找和哺育中國未來的優秀企業家，陪伴他們實現人生價值、企業價值、社會價值是我們的責任和使命。</div>
-		<div class="founder_text founder_text_a hide_m">我們堅守自己固有的發展節奏和“以人為本”的原點投資理念，低調而穩健，追求更為紮實及長久的規劃發展，不急於壹時壹刻，與中華文化智慧體系相結合，為初創企業股權投資的未來開創更為廣闊的壹番新天地。我們信奉精品哲學，遵守重質不重量，細工慢活的投資原則，主旨只有壹個，即“價值投資”。</div>
-		<div class="toShow"><img src="img/1.jpg"/>點擊展開</div>
-		<div class="tohide hide_m"><img src="img/2.jpg"/>收起</div>
-	</div>
-	<img src="img/pc2.png" class="founder_img">
-</div>
-<!-- 願景·壹點零 -->
-<div id="vision">
-	<img src="img/pc3.jpg" class="vision_pc" />
-	<img src="img/iphone-img-01.png" class="vision_m" />
-	<div class="text1">愿景·壹點零</div>
-	<div class="text2 text-pc">第壹個十年，我們旨在構建中國價值投資的標準體系，希望通過股權投資的方式來帶動整個中國的變化。</div>
-	<div class="text3 text-pc">我們的願景是發掘和哺育中國優秀的企業家，陪伴他們實現人生價值、企業價值、社會價值，為中國的繁榮富強作出貢獻。</div>
-	<div class="text2 text-m-75">
+	<!-- 願景·壹點零 -->
+	<div id="vision">
+		<img src="img/pc3.jpg" class="vision_pc" />
+		<img src="img/iphone-img-01.png" class="vision_m" />
+		<div class="text1">愿景·壹點零</div>
+		<div class="text2 text-pc">第壹個十年，我們旨在構建中國價值投資的標準體系，希望通過股權投資的方式來帶動整個中國的變化。</div>
+		<div class="text3 text-pc">我們的願景是發掘和哺育中國優秀的企業家，陪伴他們實現人生價值、企業價值、社會價值，為中國的繁榮富強作出貢獻。</div>
+		<div class="text2 text-m-75">
 			第壹個十年，我們旨在構建中國價值投資的標準體系，
-		<p>希望通過股權投資的方式來帶動整個中國的變化。</p>
-		<p>我們的願景是發掘和哺育中國優秀的企業家，陪伴他們</p>
-		<p>實現人生價值、企業價值、社會價值，為中國的繁榮富</p>強作出貢獻。</div>
-	<div class="text4">價值觀</div>
-	<!-- <div class="textImg"><img src="img/ninec.png" /></div> -->
-	<div class="textbox">
-		<div class="box"> 
-			<div>矢誌</div>
-			<span>不渝</span> 
-			<img src="img/o.png"/>
-		</div>
-		<div class="box">
-			<div>正心</div>
-			<span>誠意</span>
-			<img src="img/o.png"/>
-		</div>
-		<div class="box">
-			<div>先舍</div>
-			<span>後得</span>
-			<img src="img/o.png"/>
-		</div>
-		<div class="box">
-			<div>腳踏</div>
-			<span>實地</span>
-			<img src="img/o.png"/>
-		</div>
-		<div class="box">
-			<div>持之</div>
-			<span>以恒</span>
-			<img src="img/o.png"/>
-		</div>
-		<div class="box">
-			<div>學無</div>
-			<span>止境</span>
-			<img src="img/o.png"/>
-		</div>
-		<div class="box">
-			<div>精益</div>
-			<span>求精</span>
-			<img src="img/o.png"/>
-		</div>
-		<div class="box">
-			<div>眾誌</div>
-			<span>成城</span>
-			<img src="img/o.png"/>
-		</div>
-		<div class="box">
-			<div>飲水</div>
-			<span>思源</span>
-			<img src="img/o.png"/>
+			<p>希望通過股權投資的方式來帶動整個中國的變化。</p>
+			<p>我們的願景是發掘和哺育中國優秀的企業家，陪伴他們</p>
+			<p>實現人生價值、企業價值、社會價值，為中國的繁榮富</p>強作出貢獻。</div>
+		<div class="text4">價值觀</div>
+		<!-- <div class="textImg"><img src="img/ninec.png" /></div> -->
+		<div class="textbox">
+			<div class="box">
+				<div>矢誌</div>
+				<span>不渝</span>
+				<img src="img/o.png" />
+			</div>
+			<div class="box">
+				<div>正心</div>
+				<span>誠意</span>
+				<img src="img/o.png" />
+			</div>
+			<div class="box">
+				<div>先舍</div>
+				<span>後得</span>
+				<img src="img/o.png" />
+			</div>
+			<div class="box">
+				<div>腳踏</div>
+				<span>實地</span>
+				<img src="img/o.png" />
+			</div>
+			<div class="box">
+				<div>持之</div>
+				<span>以恒</span>
+				<img src="img/o.png" />
+			</div>
+			<div class="box">
+				<div>學無</div>
+				<span>止境</span>
+				<img src="img/o.png" />
+			</div>
+			<div class="box">
+				<div>精益</div>
+				<span>求精</span>
+				<img src="img/o.png" />
+			</div>
+			<div class="box">
+				<div>眾誌</div>
+				<span>成城</span>
+				<img src="img/o.png" />
+			</div>
+			<div class="box">
+				<div>飲水</div>
+				<span>思源</span>
+				<img src="img/o.png" />
+			</div>
 		</div>
 	</div>
-</div>
 
-<!-- 關註領域 -->
-<div id="area" class="area">
-	<div class="area_left">
-		<div class="specialText">What</div>
-		<div class="specialText">we</div>
-		<div class="specialText">seek</div>
+	<!-- 關註領域 -->
+	<div id="area" class="area">
+		<div class="area_left">
+			<div class="specialText">What</div>
+			<div class="specialText">we</div>
+			<div class="specialText">seek</div>
+			<div class="normalText">關註領域</div>
+		</div>
+		<div class="area_content">
+			<div class="i1">
+				<img src="img/i1.png" />
+				<div class="title">醫療健康</div>
+				<div class="subtext">醫療科技的發展，能幫助人們預防病患，獲得更</div>
+				<div class="subtext">有效的治疗，让人类更加健康。</div>
+			</div>
+			<div class="i2" style="margin-right:0px">
+				<img src="img/i2.png" />
+				<div class="title">先進制造</div>
+				<div class="subtext">制造業是國家繁榮富強的支柱行業，讓中國制</div>
+				<div class="subtext">造引領世界，成為先進的代名詞。</div>
+			</div>
+			<div class="i3">
+				<img src="img/i3.png" />
+				<div class="title">消費生活</div>
+				<div class="subtext">日常生活離不開衣食住行，將投資回歸生意本</div>
+				<div class="subtext">質，讓天下人和我們壹起做生意。</div>
+			</div>
+			<div class="i4" style="margin-right:0px">
+				<img src="img/i4.png" />
+				<div class="title">企業服務</div>
+				<div class="subtext">雲計算、大數據、人工智能等技術正與各行各</div>
+				<div class="subtext">業融合，助力企業更加高效有序。</div>
+			</div>
+		</div>
+	</div>
+	<!-- 關註領域 -->
+	<div id="area_m">
+		<div class="specialText">What we seek</div>
 		<div class="normalText">關註領域</div>
-	</div>
-	<div class="area_content">
-		<div class="i1">
-			<img src="img/i1.png" />
+
+		<div class="area_list">
+			<div>
+				<img src="img/i1.png" class="i1" />
+			</div>
 			<div class="title">醫療健康</div>
-			<div class="subtext">醫療科技的發展，能幫助人們預防病患，獲得更</div>
-			<div class="subtext">有效的治疗，让人类更加健康。</div>
+			<div class="text">支持國家支柱產業，關懷人類生命基石，投資醫療健</div>
+			<div class="text">康幫助更多人提升生命質量。</div>
 		</div>
-		<div class="i2" style="margin-right:0px">
-			<img src="img/i2.png" />
+		<div class="area_list">
+			<div>
+				<img src="img/i2.png" class="i2" />
+			</div>
 			<div class="title">先進制造</div>
-			<div class="subtext">制造業是國家繁榮富強的支柱行業，讓中國制</div>
-			<div class="subtext">造引領世界，成為先進的代名詞。</div>
+			<div class="text">技術創新帶來商業變革，看好先進制造業與現</div>
+			<div class="text">代服務業深度融合。</div>
 		</div>
-		<div class="i3">
-			<img src="img/i3.png" />
+		<div class="area_list">
+			<div>
+				<img src="img/i3.png" class="i3" />
+			</div>
 			<div class="title">消費生活</div>
-			<div class="subtext">日常生活離不開衣食住行，將投資回歸生意本</div>
-			<div class="subtext">質，讓天下人和我們壹起做生意。</div>
+			<div class="text">吃喝玩樂，衣食住行，大眾消費即是我們所投，將投</div>
+			<div class="text">資回歸生意本質，讓天下人和我們壹起做生意。</div>
 		</div>
-		<div class="i4" style="margin-right:0px">
-			<img src="img/i4.png" />
+		<div class="area_list">
+			<div>
+				<img src="img/i4.png" class="i4" />
+			</div>
 			<div class="title">企業服務</div>
-			<div class="subtext">雲計算、大數據、人工智能等技術正與各行各</div>
-			<div class="subtext">業融合，助力企業更加高效有序。</div>
+			<div class="text">技術驅動型的企業服務公司，包括雲計算、大數</div>
+			<div class="text">據、安全、人工智能等方向是未來趨勢。</div>
 		</div>
 	</div>
-</div>
-<!-- 關註領域 -->
-<div id="area_m">
-	<div class="specialText">What we seek</div>
-	<div class="normalText">關註領域</div>
-
-	<div class="area_list">
-		<div><img src="img/i1.png" class="i1" /></div>
-		<div class="title">醫療健康</div>
-		<div class="text">支持國家支柱產業，關懷人類生命基石，投資醫療健</div>
-		<div class="text">康幫助更多人提升生命質量。</div>
-	</div>
-	<div class="area_list">
-		<div><img src="img/i2.png" class="i2" /></div>
-		<div class="title">先進制造</div>
-		<div class="text">技術創新帶來商業變革，看好先進制造業與現</div>
-		<div class="text">代服務業深度融合。</div>
-	</div>
-	<div class="area_list">
-		<div><img src="img/i3.png" class="i3" /></div>
-		<div class="title">消費生活</div>
-		<div class="text">吃喝玩樂，衣食住行，大眾消費即是我們所投，將投</div>
-		<div class="text">資回歸生意本質，讓天下人和我們壹起做生意。</div>
-	</div>
-	<div class="area_list">
-		<div><img src="img/i4.png" class="i4" /></div>
-		<div class="title">企業服務</div>
-		<div class="text">技術驅動型的企業服務公司，包括雲計算、大數</div>
-		<div class="text">據、安全、人工智能等方向是未來趨勢。</div>
-	</div>
-</div>
 
 
-<div id="vision" class="vis-old">
-	<img src="img/pc4.jpg" class="vision_pc">
-	<img src="img/p4.jpg" class="vision_m">
-	<div class="text1">· 培養 ·</div>
-	<div class="textbox">
-		<div class="box"> 
-			<div>肯定人的<br>能力</div>
-			<!-- <span>能力</span>  -->
-			<img src="img/o_01.png">
+	<div id="vision" class="vis-old">
+		<img src="img/pc4.jpg" class="vision_pc">
+		<img src="img/p4.jpg" class="vision_m">
+		<div class="text1"> 培養 </div>
+		<div class="textbox">
+			<div class="box">
+				<div>
+					<span>肯定</span>
+					<br>人的能力</div>
+				<!-- <span>能力</span>  -->
+				<img src="img/o_01.png">
+			</div>
+			<div class="box">
+				<div>
+					<span>發現</span>
+					<br>人的優點</div>
+				<img src="img/o_01.png">
+			</div>
+			<div class="box">
+				<div>
+					<span>信任</span>
+					<br>人的品行</div>
+				<img src="img/o_01.png">
+			</div>
+			<div class="box">
+				<div>
+					<span>點燃</span>
+					<br>人的意願</div>
+				<img src="img/o_01.png">
+			</div>
+			<div class="box">
+				<div>
+					<span>激發</span>
+					<br>人的潛能</div>
+				<img src="img/o_01.png">
+			</div>
+			<div class="box">
+				<div>
+					<span>耕耘</span>
+					<br>人的心靈</div>
+				<img src="img/o_01.png">
+			</div>
+			<div class="box">
+				<div>
+					<span>實現</span>
+					<br>人的價值</div>
+				<img src="img/o_01.png">
+			</div>
 		</div>
-		<div class="box">
-			<div>發現人的<br>優點</div>
-			<img src="img/o_01.png">
-		</div>
-		<div class="box">
-			<div>信任人的<br>品行</div>
-			<img src="img/o_01.png">
-		</div>
-		<div class="box">
-			<div>點燃人的<br>意願</div>
-			<img src="img/o_01.png">
-		</div>
-		<div class="box">
-			<div>激發人的<br>潛能</div>
-			<img src="img/o_01.png">
-		</div>
-		<div class="box">
-			<div>耕耘人的<br>心靈</div>
-			<img src="img/o_01.png">
-		</div>
-		<div class="box">
-			<div>實現人的<br>價值</div>
-			<img src="img/o_01.png">
-		</div>
+		<div class="text2 text-pc">我們是壹支海納百川的“球隊”，我們是壹支齊心協力的“球隊”，我們是壹支戰無不勝的“球隊”。</div>
+		<div class="text3 text-pc">在這個隊伍裏，普通的球員變成優秀的球員，優秀的球員變成卓越的球員，源源不斷的球員在這裏共同實現我們的“冠軍”夢想！</div>
+		<div class="text2 text-m-75">
+			<p>我們是壹支海納百川的“球隊”，我們是壹支齊心協力</p>
+			<p>的“球隊”，我們是壹支戰無不勝的“球隊”。</p>
+			<p>在這個隊伍裏，普通的球員變成優秀的球員，優秀的</p>
+			<p>球員變成卓越的球員，源源不斷的球員在這裏共同實</p>
+			現我們的“冠軍”夢想！</div>
+		<!-- <div class="text4">价值观</div> -->
+		<!-- <div class="textImg"><img src="img/ninec.png" /></div> -->
+
 	</div>
-	<div class="text2 text-pc">我們是壹支海納百川的“球隊”，我們是壹支齊心協力的“球隊”，我們是壹支戰無不勝的“球隊”。</div>
-	<div class="text3 text-pc">在這個隊伍裏，普通的球員變成優秀的球員，優秀的球員變成卓越的球員，源源不斷的球員在這裏共同實現我們的“冠軍”夢想！</div>
-	<div class="text2 text-m-75">
-		<p>我們是壹支海納百川的“球隊”，我們是壹支齊心協力</p>
-		<p>的“球隊”，我們是壹支戰無不勝的“球隊”。</p>
-		<p>在這個隊伍裏，普通的球員變成優秀的球員，優秀的</p>
-		<p>球員變成卓越的球員，源源不斷的球員在這裏共同實</p>
-		現我們的“冠軍”夢想！</div>
-	<!-- <div class="text4">价值观</div> -->
-	<!-- <div class="textImg"><img src="img/ninec.png" /></div> -->
-	
-</div>
-<!-- 元真夥伴 -->
-<div id="partner" class="partner">
-	<div class="partner_left">
-		<div class="specialText">Team</div>
-		<div class="normalText">元真夥伴</div>
-	</div>
-	<div class=" newbtn">
-		<div class="newbtn_w">
-			<div class="top-up"><img src="img/up.png" id="up" /></div>
-			<div class="icon-poi"><i class="point1 iconyuandianzhong point_act"></i> </div>
-			<div class="icon-poi"><i class="point2 iconyuandianzhong "></i> </div>
-			<div class="boom-down"><img src="img/down.png" id="down" /></div>
+	<!-- 元真夥伴 -->
+	<div id="partner" class="partner">
+		<div class="partner_left">
+			<div class="specialText">Team</div>
+			<div class="normalText">元真夥伴</div>
 		</div>
-	</div>
-	<div class="partner_right">
-		<div class="scrollbox scrollbox-user">
-			<div id="scrollDiv" class="swiper-wrapper">
-				<div class="swiper-slide">
-					<ul id="scroll_a">
-						<li class="top-li">
-							<div class="user-hea-transition">
-								<div class="scroll_text">
-									<div class="scroll_text_a">Rosen</div>
-									<!-- <div class="scroll_text_b">董事長</div> -->
-									<div style="top:2.78rem" class="scroll_text_e">/</div>
-									<div class="scroll_text_c">羅森</div>
-									<span class="scroll_text_d">
+		<div class=" newbtn">
+			<div class="newbtn_w">
+				<div class="top-up">
+					<img src="img/up.png" id="up" />
+				</div>
+				<div class="icon-poi">
+					<i class="point1 iconyuandianzhong point_act"></i>
+				</div>
+				<div class="icon-poi">
+					<i class="point2 iconyuandianzhong "></i>
+				</div>
+				<div class="boom-down">
+					<img src="img/down.png" id="down" />
+				</div>
+			</div>
+		</div>
+		<div class="partner_right">
+			<div class="scrollbox scrollbox-user">
+				<div id="scrollDiv" class="swiper-wrapper">
+					<div class="swiper-slide">
+						<ul id="scroll_a">
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text">
+										<div class="scroll_text_a">Rosen</div>
+										<div class="scroll_text_b">董事長</div>
+										<div style="top:2.78rem" class="scroll_text_e">/</div>
+										<div class="scroll_text_c">羅森</div>
+										<div class="scroll_text_f">順勢隨緣</div>
+										<!-- <span class="scroll_text_d">
 											<div style="padding-top:.5rem;font-size:.23rem;">董事長</div>
 										<!-- <div>深圳博林集團有限公司 副總裁</div>
                                         <div>廣東省海青會 副會長</div>
@@ -369,17 +430,153 @@
                                         <div>深圳市總商會第七屆理事會 執委</div>
                                         <div>深圳市慈善會73集團慈善基金</div>
                                         <div>聯合創始人 </div> -->
-										</span>
+										<!-- </span> -->
+									</div>
+									<img src="img/m1.png" class="partner_img">
+								</div>
+
+							</li>
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text">
+										<div class="scroll_text_a">Alex</div>
+										<div class="scroll_text_b">創始合夥人</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">賴潤偉</div>
+										<div class="scroll_text_f">投資以人爲本</div>
+										<!-- <div class="scroll_text_d">
+											曾就職於阿裏巴巴，投身金融領域十余年，長期致力於中西智慧融合的投研決策；熱愛投資行業並且擁有豐富實戰經驗，對創業&天使投資有著獨到見解並努力踐行「投資以人為本」之道。
+										</div> -->
+									</div>
+									<img src="img/m2.png" class="partner_img">
+								</div>
+							</li>
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<img src="img/m3.png" class="partner_img">
+									<div class="scroll_text">
+										<div class="scroll_text_a">PQ</div>
+										<div class="scroll_text_b">財務主管</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">彭清</div>
+										<div class="scroll_text_f">施比受更有福</div>
+									</div>
+								</div>
+							</li>
+							<li class="bottom-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text  scroll_text_top">
+										<div class="scroll_text_a">Queenie</div>
+										<div class="scroll_text_b">投資經理</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">王沁怡</div>
+										<div class="scroll_text_d">愛是宇宙最大能量</div>
+									</div>
+									<img src="img/m4.png" class="partner_img">
+								</div>
+							</li>
+							<li class="bottom-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text  scroll_text_top">
+										<div class="scroll_text_a">Chris</div>
+										<div class="scroll_text_b">投資經理</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">許越</div>
+										<div class="scroll_text_d">
+											無專精則不能成，無涉獵則不能通
+										</div>
+									</div>
+									<img src="img/m5.png" class="partner_img">
+								</div>
+							</li>
+							<li class="bottom-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text  scroll_text_top">
+										<div class="scroll_text_a">Jack</div>
+										<div class="scroll_text_b">投資助理</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">林訓強</div>
+										<div class="scroll_text_d">
+											不忘初心 方得始終
+										</div>
+									</div>
+									<img src="img/m10.png" class="partner_img">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-slide">
+						<ul id="scroll_a">
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text ">
+										<div class="scroll_text_a">Yen</div>
+										<div class="scroll_text_b">出納</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">羅曉燕</div>
+										<div class="scroll_text_f">
+											努力，加油！做更好的自己
+										</div>
+									</div>
+									<img src="img/m7.png" class="partner_img">
+								</div>
+							</li>
+							<li class="top-li">
+								<div class="user-hea-transition">
+									<div class="scroll_text ">
+										<div class="scroll_text_a">Kerry</div>
+										<div class="scroll_text_b">財務助理</div>
+										<div class="scroll_text_e">/</div>
+										<div class="scroll_text_c">
+											陳嘉宜</div>
+										<div class="scroll_text_f">
+											世界上所有的事都是有意義的
+										</div>
+									</div>
+									<img src="img/m8.png" class="partner_img">
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 元真夥伴 -->
+	<div id="partner_m" class="partner ">
+		<div class="partner_a">
+			<div class="specialText">Team</div>
+			<div class="normalText">元真夥伴</div>
+		</div>
+		<div class="swiper-container pa-pt-let">
+			<div class="swiper-wrapper" class="scrollbox">
+				<div class="swiper-slide">
+					<ul class="scroll_a">
+						<li class="top-li">
+							<div class="list">
+								<div class="scroll_text">
+									<div class="scroll_text_a">Rosen</div>
+									<div class="scroll_text_e">/</div>
+									<div class="scroll_text_c">羅森</div>
+									<span class="scroll_text_d">
+										<div style="font-size:.29rem;padding-top:.5rem;">董事長</div>
+										<!-- <div>深圳博林集團有限公司 副總裁</div>
+                                    <div>廣東省海青會 副會長</div>
+                                    <div>深圳市僑青委 副主任</div>
+                                    <div>深圳市總商會第七屆理事會 執委</div>
+                                    <div>深圳市慈善會73集團慈善基金</div>
+                                    <div>聯合創始人 </div> -->
+									</span>
 								</div>
 								<img src="img/m1.png" class="partner_img">
 							</div>
-
 						</li>
 						<li class="top-li">
-							<div class="user-hea-transition">
+							<div class="list">
 								<div class="scroll_text">
 									<div class="scroll_text_a">Alex</div>
-									<div class="scroll_text_b">創始合夥人</div>
+									<!-- <div class="scroll_text_b">創始合夥人</div> -->
 									<div class="scroll_text_e">/</div>
 									<div class="scroll_text_c">賴潤偉</div>
 									<div class="scroll_text_d">
@@ -389,448 +586,323 @@
 								<img src="img/m2.png" class="partner_img">
 							</div>
 						</li>
-						<li class="top-li">
-							<div class="user-hea-transition">
+						<li class="bottom-li">
+							<div class="list">
 								<img src="img/m3.png" class="partner_img">
-								<div class="scroll_text">
+								<div class="scroll_text scroll_text_top">
 									<div class="scroll_text_a">PQ</div>
-									<div class="scroll_text_b">財務主管</div>
+									<!-- <div class="scroll_text_b">財務主管</div> -->
 									<div class="scroll_text_e">/</div>
 									<div class="scroll_text_c">彭清</div>
-									<div class="scroll_text_f">施比受更有福</div>
+									<div class="scroll_text_d">
+										施比受更有福
+									</div>
 								</div>
 							</div>
 						</li>
 						<li class="bottom-li">
-							<div class="user-hea-transition">
-								<div class="scroll_text  scroll_text_top">
+							<div class="list">
+								<div class="scroll_text scroll_text_top">
 									<div class="scroll_text_a">Queenie</div>
-									<div class="scroll_text_b">投資經理</div>
+									<!-- <div class="scroll_text_b">投資經理</div> -->
 									<div class="scroll_text_e">/</div>
 									<div class="scroll_text_c">王沁怡</div>
-									<div class="scroll_text_d">愛是宇宙最大能量</div>
+									<div class="scroll_text_d">
+										愛是宇宙最大能量
+									</div>
 								</div>
 								<img src="img/m4.png" class="partner_img">
 							</div>
 						</li>
-						<li class="bottom-li">
-							<div class="user-hea-transition">
-								<div class="scroll_text  scroll_text_top">
+					</ul>
+				</div>
+				<div class="swiper-slide">
+					<ul class="scroll_a">
+						<li class="top-li">
+							<div class="list">
+								<div class="scroll_text">
 									<div class="scroll_text_a">Chris</div>
-									<div class="scroll_text_b">投資經理</div>
+									<!-- <div class="scroll_text_b">投資經理</div> -->
 									<div class="scroll_text_e">/</div>
 									<div class="scroll_text_c">許越</div>
-									<div class="scroll_text_d">
+									<div class="scroll_text_f">
 										無專精則不能成，無涉獵則不能通
 									</div>
 								</div>
 								<img src="img/m5.png" class="partner_img">
 							</div>
 						</li>
-						<li class="bottom-li">
-							<div class="user-hea-transition">
-								<div class="scroll_text  scroll_text_top">
+						<li class="top-li">
+							<div class="list">
+								<div class="scroll_text">
 									<div class="scroll_text_a">Jack</div>
-									<div class="scroll_text_b">投資助理</div>
+									<!-- <div class="scroll_text_b">投資助理</div> -->
 									<div class="scroll_text_e">/</div>
 									<div class="scroll_text_c">林訓強</div>
-									<div class="scroll_text_d">
+									<div class="scroll_text_f">
 										不忘初心 方得始終
 									</div>
 								</div>
 								<img src="img/m10.png" class="partner_img">
 							</div>
 						</li>
-					</ul>
-				</div>
-				<div class="swiper-slide">
-					<ul id="scroll_a">
-						<li class="top-li">
-							<div class="user-hea-transition">
-								<div class="scroll_text ">
+						<li class="bottom-li">
+							<div class="list">
+								<img src="img/m7.png" class="partner_img">
+								<div class="scroll_text scroll_text_top ">
 									<div class="scroll_text_a">Yen</div>
-									<div class="scroll_text_b">出納</div>
+									<!-- <div class="scroll_text_b">出納</div> -->
 									<div class="scroll_text_e">/</div>
 									<div class="scroll_text_c">羅曉燕</div>
-									<div class="scroll_text_f">
+									<div class="scroll_text_d">
 										努力，加油！做更好的自己
 									</div>
 								</div>
-								<img src="img/m7.png" class="partner_img">
 							</div>
 						</li>
-						<li class="top-li">
-							<div class="user-hea-transition">
-								<div class="scroll_text ">
+						<li class="bottom-li">
+							<div class="list">
+								<div class="scroll_text scroll_text_top">
 									<div class="scroll_text_a">Kerry</div>
-									<div class="scroll_text_b">財務助理</div>
+									<!-- <div class="scroll_text_b">財務助理</div> -->
 									<div class="scroll_text_e">/</div>
-									<div class="scroll_text_c">
-										陳嘉宜</div>
-									<div class="scroll_text_f">
+									<div class="scroll_text_c">陳嘉宜</div>
+									<div class="scroll_text_d">
 										世界上所有的事都是有意義的
 									</div>
 								</div>
 								<img src="img/m8.png" class="partner_img">
 							</div>
 						</li>
-
 					</ul>
 				</div>
 			</div>
+			<div class="swiper-pagination1"></div>
 		</div>
 	</div>
-</div>
-<!-- 元真夥伴 -->
-<div id="partner_m" class="partner ">
-	<div class="partner_a">
-		<div class="specialText">Team</div>
-		<div class="normalText">元真夥伴</div>
-	</div>
-	<div class="swiper-container pa-pt-let">
-		<div class="swiper-wrapper" class="scrollbox">
-			<div class="swiper-slide">
-				<ul class="scroll_a">
-					<li class="top-li">
-						<div class="list">
-							<div class="scroll_text">
-								<div class="scroll_text_a">Rosen</div>
-								<div class="scroll_text_e">/</div>
-								<div class="scroll_text_c">羅森</div>
-								<span class="scroll_text_d">
-										<div style="font-size:.29rem;padding-top:.5rem;">董事長</div>
-									<!-- <div>深圳博林集團有限公司 副總裁</div>
-                                    <div>廣東省海青會 副會長</div>
-                                    <div>深圳市僑青委 副主任</div>
-                                    <div>深圳市總商會第七屆理事會 執委</div>
-                                    <div>深圳市慈善會73集團慈善基金</div>
-                                    <div>聯合創始人 </div> -->
-									</span>
-							</div>
-							<img src="img/m1.png" class="partner_img">
-						</div>
-					</li>
-					<li class="top-li">
-						<div class="list">
-							<div class="scroll_text">
-								<div class="scroll_text_a">Alex</div>
-								<!-- <div class="scroll_text_b">創始合夥人</div> -->
-								<div class="scroll_text_e">/</div>
-								<div class="scroll_text_c">賴潤偉</div>
-								<div class="scroll_text_d">
-									曾就職於阿裏巴巴，投身金融領域十余年，長期致力於中西智慧融合的投研決策；熱愛投資行業並且擁有豐富實戰經驗，對創業&天使投資有著獨到見解並努力踐行「投資以人為本」之道。
-								</div>
-							</div>
-							<img src="img/m2.png" class="partner_img">
-						</div>
-					</li>
-					<li class="bottom-li">
-						<div class="list">
-							<img src="img/m3.png" class="partner_img">
-							<div class="scroll_text scroll_text_top">
-								<div class="scroll_text_a">PQ</div>
-								<!-- <div class="scroll_text_b">財務主管</div> -->
-								<div class="scroll_text_e">/</div>
-								<div class="scroll_text_c">彭清</div>
-								<div class="scroll_text_d">
-									施比受更有福
-								</div>
-							</div>
-						</div></li>
-					<li class="bottom-li">
-						<div class="list">
-							<div class="scroll_text scroll_text_top">
-								<div class="scroll_text_a">Queenie</div>
-								<!-- <div class="scroll_text_b">投資經理</div> -->
-								<div class="scroll_text_e">/</div>
-								<div class="scroll_text_c">王沁怡</div>
-								<div class="scroll_text_d">
-									愛是宇宙最大能量
-								</div>
-							</div>
-							<img src="img/m4.png" class="partner_img">
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="swiper-slide">
-				<ul class="scroll_a">
-					<li class="top-li">
-						<div class="list">
-							<div class="scroll_text">
-								<div class="scroll_text_a">Chris</div>
-								<!-- <div class="scroll_text_b">投資經理</div> -->
-								<div class="scroll_text_e">/</div>
-								<div class="scroll_text_c">許越</div>
-								<div class="scroll_text_f">
-									無專精則不能成，無涉獵則不能通
-								</div>
-							</div>
-							<img src="img/m5.png" class="partner_img">
-						</div>
-					</li>
-					<li class="top-li">
-						<div class="list">
-							<div class="scroll_text">
-								<div class="scroll_text_a">Jack</div>
-								<!-- <div class="scroll_text_b">投資助理</div> -->
-								<div class="scroll_text_e">/</div>
-								<div class="scroll_text_c">林訓強</div>
-								<div class="scroll_text_f">
-									不忘初心 方得始終
-								</div>
-							</div>
-							<img src="img/m10.png" class="partner_img">
-						</div>
-					</li>
-					<li class="bottom-li">
-						<div class="list">
-							<img src="img/m7.png" class="partner_img">
-							<div class="scroll_text scroll_text_top ">
-								<div class="scroll_text_a">Yen</div>
-								<!-- <div class="scroll_text_b">出納</div> -->
-								<div class="scroll_text_e">/</div>
-								<div class="scroll_text_c">羅曉燕</div>
-								<div class="scroll_text_d">
-									努力，加油！做更好的自己
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="bottom-li">
-						<div class="list">
-							<div class="scroll_text scroll_text_top">
-								<div class="scroll_text_a">Kerry</div>
-								<!-- <div class="scroll_text_b">財務助理</div> -->
-								<div class="scroll_text_e">/</div>
-								<div class="scroll_text_c">陳嘉宜</div>
-								<div class="scroll_text_d">
-									世界上所有的事都是有意義的
-								</div>
-							</div>
-							<img src="img/m8.png" class="partner_img">
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="swiper-pagination1"></div>
-	</div>
-</div>
 
 
-<!-- 投資日誌-->
-<div id="daily" class="daily">
-	<img src="img/pc5.jpg" class="daily_bg" />
-	<div class="daily_left">
-		<div class="specialText">Investment Diary</div>
-		<div class="normalText">投資日誌</div>
-	</div>
-	<div class="daily_btn">
-		<div class="daily_btn_w">
-			<div><img src="img/up.png" id="daily_up" /></div>
-			<div><i class="point1 iconyuandianzhong point_act"></i> </div>
-			<div><i class="point2 iconyuandianzhong "></i> </div>
-			<div style="padding-top:.06rem"><img src="img/down.png" id="daily_down" /></div>
+	<!-- 投資日誌-->
+	<div id="daily" class="daily">
+		<img src="img/pc5.jpg" class="daily_bg" />
+		<div class="daily_left">
+			<div class="specialText">Investment Diary</div>
+			<div class="normalText">投資日誌</div>
 		</div>
-	</div>
-	<div class="daily_right">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide scrolldaily">
-				<div class="list list_button">
-					<div class="sz-list">
-						<div class="list_textRow ">
-							<div class="text_a">IHS智觸</div>
-							<!-- <div class="text_v">系統有限公司</div> -->
-							<div class="text_e">/</div>
-							<span class="taxt_b">
+		<div class="daily_btn">
+			<div class="daily_btn_w">
+				<div>
+					<img src="img/up.png" id="daily_up" />
+				</div>
+				<div>
+					<i class="point1 iconyuandianzhong point_act"></i>
+				</div>
+				<div>
+					<i class="point2 iconyuandianzhong "></i>
+				</div>
+				<div style="padding-top:.06rem">
+					<img src="img/down.png" id="daily_down" />
+				</div>
+			</div>
+		</div>
+		<div class="daily_right">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide scrolldaily">
+					<div class="list list_button">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">IHS智觸</div>
+								<!-- <div class="text_v">系統有限公司</div> -->
+								<div class="text_e">/</div>
+								<span class="taxt_b">
 									<div>創始人：唐宙明、</div>
 									<div>Mustapha Aassouli</div>
 									<div>投資時間：2017年10月</div>
 									<div>投資階段：種子輪</div>
 								</span>
+							</div>
+							<img src="img/t1.png" class="daily_img">
 						</div>
-						<img src="img/t1.png" class="daily_img">
 					</div>
-				</div>
-				<div class="list list_button">
-					<div class="sz-list">
-						<div class="list_textRow ">
-							<div class="text_a">動網</div>
-							<!-- <div class="text_v">科技有限公司</div> -->
-							<div class="text_e">/</div>
-							<span class="taxt_b">
+					<div class="list list_button">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">動網</div>
+								<!-- <div class="text_v">科技有限公司</div> -->
+								<div class="text_e">/</div>
+								<span class="taxt_b">
 									<div> 創始人：梅子佳</div>
 									<div>投資時間：2017年11月</div>
 									<div>投資階段：Pre-A+輪</div>
 								</span>
+							</div>
+							<img src="img/t2.png" class="daily_img">
 						</div>
-						<img src="img/t2.png" class="daily_img">
 					</div>
-				</div>
-				<div class="list list_button">
-					<div class="sz-list">
-						<div class="list_textRow ">
-							<div class="text_a">YIPMAN</div>
-							<!-- <div class="text_v">餐飲管理有限公司</div> -->
-							<div class="text_e">/</div>
-							<span class="taxt_b">
+					<div class="list list_button">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">YIPMAN</div>
+								<!-- <div class="text_v">餐飲管理有限公司</div> -->
+								<div class="text_e">/</div>
+								<span class="taxt_b">
 									<div> 創始人：葉鴻瑞、謝鵬翔</div>
 									<div>投資時間：2017年11月</div>
 									<div>投資階段：種子輪</div>
 								</span>
+							</div>
+							<img src="img/t3.png" class="daily_img">
 						</div>
-						<img src="img/t3.png" class="daily_img">
 					</div>
-				</div>
-				
-				<div class="list list_top">
-					<div class="sz-list">
-						<div class="list_textRow ">
-							<div class="text_a">動盈</div>
-							<!-- <div class="text_v">(上海)有限公司</div> -->
-							<div class="text_e">/</div>
-							<span class="taxt_b">
+
+					<div class="list list_top">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">動盈</div>
+								<!-- <div class="text_v">(上海)有限公司</div> -->
+								<div class="text_e">/</div>
+								<span class="taxt_b">
 									<div>創始人：程敏（Monica）</div>
 									<div>投資時間：2018年04月</div>
 									<div>投資階段：天使輪</div>
 								</span>
+							</div>
+							<img src="img/t5.png" class="daily_img">
 						</div>
-						<img src="img/t5.png" class="daily_img">
 					</div>
-				</div>
-				<div class="list list_top">
-					<div class="sz-list">
-						<div class="list_textRow ">
-							<div class="text_a">豐疆智能</div>
-							<!-- <div class="text_v">股份有限公司</div> -->
-							<div class="text_e">/</div>
-							<span class="taxt_b">
+					<div class="list list_top">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">豐疆智能</div>
+								<!-- <div class="text_v">股份有限公司</div> -->
+								<div class="text_e">/</div>
+								<span class="taxt_b">
 									<div>創始人：吳迪</div>
 									<div>投資時間：2018年11月</div>
 									<div>投資階段：Pre-A輪</div>
 								</span>
+							</div>
+							<img src="img/t6.png" class="daily_img">
 						</div>
-						<img src="img/t6.png" class="daily_img">
+					</div>
+					<div class="list list_top">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">Semacare旭宏醫療</div>
+								<!-- <div class="text_v">科技有限公司</div> -->
+								<div class="text_e">/</div>
+								<span class="taxt_b">
+									<div>創始人：王博洋、
+										<br/>楊馥誠、羅傑</div>
+									<div>投資時間：2019年02月</div>
+									<div>投資階段：Pre-A輪</div>
+								</span>
+							</div>
+							<img src="img/t10.png" class="daily_img">
+						</div>
 					</div>
 				</div>
-				<div class="list list_top">
-					<div class="sz-list">
-						<div class="list_textRow ">
-							<div class="text_a">Semacare旭宏醫療</div>
-							<!-- <div class="text_v">科技有限公司</div> -->
-							<div class="text_e">/</div>
-							<span class="taxt_b">
-								<div>創始人：王博洋、<br/>楊馥誠、羅傑</div>
-								<div>投資時間：2019年02月</div>
-								<div>投資階段：Pre-A輪</div>
-							</span>
-						</div>
-						<img src="img/t10.png" class="daily_img">
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide scrollDiv">
-				<div class="list list_button">
-					<div class="sz-list">
-						<div class="list_textRow ">
-							<div class="text_a">加拉</div>
-							<!-- <div class="text_v">投資企業</div> -->
-							<!-- <div class="text_f">（有限合夥）</div> -->
-							<div class="text_e">/</div>
-							<span class="taxt_b">
+				<div class="swiper-slide scrollDiv">
+					<div class="list list_button">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">加拉</div>
+								<!-- <div class="text_v">投資企業</div> -->
+								<!-- <div class="text_f">（有限合夥）</div> -->
+								<div class="text_e">/</div>
+								<span class="taxt_b">
 									<div>創始人：魏博、羅森</div>
 									<div>投資時間：2018年05月</div>
 								</span>
+							</div>
+							<img src="img/t7.png" class="daily_img">
 						</div>
-						<img src="img/t7.png" class="daily_img">
 					</div>
-				</div>
-				<div class="list list_button">
-					<div class="sz-list">
-						<div class="list_textRow ">
-							<div class="text_a">勝金莎</div>
-							<!-- <div class="text_v">實業有限公司</div> -->
-							<div class="text_e">/</div>
-							<span class="taxt_b">
+					<div class="list list_button">
+						<div class="sz-list">
+							<div class="list_textRow ">
+								<div class="text_a">勝金莎</div>
+								<!-- <div class="text_v">實業有限公司</div> -->
+								<div class="text_e">/</div>
+								<span class="taxt_b">
 									<div>創始人：李宇琪</div>
 									<div>投資時間：2018年7月</div>
 								</span>
+							</div>
+							<img src="img/t8.png" class="daily_img">
 						</div>
-						<img src="img/t8.png" class="daily_img">
 					</div>
+
 				</div>
-				
 			</div>
+			<div class="swiper-pagination"></div>
 		</div>
-		<div class="swiper-pagination"></div>
 	</div>
-</div>
-<div id="daily_m" class="daily">
-	<img src="img/p5.jpg" class="daily_bg" />
-	<div class="daily_a">
-		<div class="specialText">Investment Diary</div>
-		<div class="normalText">投資日誌</div>
-	</div>
-	<div class="swiper-container swiper-container2 ishide">
-		<div class="swiper-wrapper" class="scrollbox">
-			<div class="swiper-slide" style="margin-left:-2%">
-				<ul class="scroll_a" >
-					<li>
-						<div class="list list_button">
-							<div class="sz-list">
-								<img src="img/t1.png" class="daily_img">
-								<div class="list_textRow ">
-									<div class="text_a">IHS智觸</div>
-									<!-- <div class="text_v">系統有限公司</div> -->
-									<div class="text_e">/</div>
-									<span class="taxt_b">
+	<div id="daily_m" class="daily">
+		<img src="img/p5.jpg" class="daily_bg" />
+		<div class="daily_a">
+			<div class="specialText">Investment Diary</div>
+			<div class="normalText">投資日誌</div>
+		</div>
+		<div class="swiper-container swiper-container2 ishide">
+			<div class="swiper-wrapper" class="scrollbox">
+				<div class="swiper-slide" style="margin-left:-2%">
+					<ul class="scroll_a">
+						<li>
+							<div class="list list_button">
+								<div class="sz-list">
+									<img src="img/t1.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">IHS智觸</div>
+										<!-- <div class="text_v">系統有限公司</div> -->
+										<div class="text_e">/</div>
+										<span class="taxt_b">
 											<div>創始人：唐宙明、</div>
 											<div>Mustapha Aassouli</div>
 											<div>投資時間：2017年10月</div>
 											<div>投資階段：種子輪</div>
 										</span>
+									</div>
 								</div>
 							</div>
-						</div>
-					</li>
-					<li>
-						<div class="list list_button">
-							<div class="sz-list">
-								<img src="img/t2.png" class="daily_img">
-								<div class="list_textRow ">
-									<div class="text_a">動網</div>
-									<!-- <div class="text_v">科技有限公司</div> -->
-									<div class="text_e">/</div>
-									<span class="taxt_b">
+						</li>
+						<li>
+							<div class="list list_button">
+								<div class="sz-list">
+									<img src="img/t2.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">動網</div>
+										<!-- <div class="text_v">科技有限公司</div> -->
+										<div class="text_e">/</div>
+										<span class="taxt_b">
 											<div> 創始人：梅子佳</div>
 											<div>投資時間：2017年11月</div>
 											<div>投資階段：Pre-A+輪</div>
 										</span>
+									</div>
 								</div>
-							</div>
 
-						</div>
-					</li>
-					<li>
-						<div class="list list_top">
-							<div class="sz-list">
-								<img src="img/t3.png" class="daily_img">
-								<div class="list_textRow ">
-									<div class="text_a">YIPMAN</div>
-									<!-- <div class="text_v">餐飲管理有限公司</div> -->
-									<div class="text_e">/</div>
-									<span class="taxt_b">
+							</div>
+						</li>
+						<li>
+							<div class="list list_top">
+								<div class="sz-list">
+									<img src="img/t3.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">YIPMAN</div>
+										<!-- <div class="text_v">餐飲管理有限公司</div> -->
+										<div class="text_e">/</div>
+										<span class="taxt_b">
 											<div> 創始人：葉鴻瑞、謝鵬翔</div>
 											<div>投資時間：2017年11月</div>
 											<div>投資階段：種子輪</div>
 										</span>
+									</div>
 								</div>
-							</div>
 
-						</div>
-					</li>
-					<li>
+							</div>
+						</li>
+						<li>
 							<div class="list list_top">
 								<div class="sz-list">
 									<img src="img/t5.png" class="daily_img">
@@ -839,283 +911,286 @@
 										<!-- <div class="text_v">(上海)有限公司</div> -->
 										<div class="text_e">/</div>
 										<span class="taxt_b">
-												<div>創始人：程敏（Monica）</div>
-												<div>投資時間：2018年04月</div>
-												<div>投資階段：天使輪</div>
-											</span>
+											<div>創始人：程敏（Monica）</div>
+											<div>投資時間：2018年04月</div>
+											<div>投資階段：天使輪</div>
+										</span>
 									</div>
 								</div>
 							</div>
-	
+
 						</li>
-				</ul>
-			</div>
-			<div class="swiper-slide">
-				<ul class="scroll_a">
-					
-					<li>
-						<div class="list list_button">
-							<div class="sz-list">
-								<img src="img/t6.png" class="daily_img">
-								<div class="list_textRow ">
-									<div class="text_a">豐疆智能</div>
-									<!-- <div class="text_v">股份有限公司</div> -->
-									<div class="text_e">/</div>
-									<span class="taxt_b">
+					</ul>
+				</div>
+				<div class="swiper-slide">
+					<ul class="scroll_a">
+
+						<li>
+							<div class="list list_button">
+								<div class="sz-list">
+									<img src="img/t6.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">豐疆智能</div>
+										<!-- <div class="text_v">股份有限公司</div> -->
+										<div class="text_e">/</div>
+										<span class="taxt_b">
 											<div>創始人：吳迪</div>
 											<div>投資時間：2018年11月</div>
 											<div>投資階段：Pre-A輪</div>
 										</span>
+									</div>
 								</div>
 							</div>
-						</div>
 
-					</li>
-					<li>
+						</li>
+						<li>
 							<div class="list list_button">
 								<div class="sz-list">
-								<img src="img/t10.png" class="daily_img">
+									<img src="img/t10.png" class="daily_img">
 									<div class="list_textRow ">
-										<div class="text_a">Semacare<br/>旭宏醫療</div>
+										<div class="text_a">Semacare
+											<br/>旭宏醫療</div>
 										<!-- <div class="text_v">(上海)有限公司</div> -->
 										<div class="text_e">/</div>
 										<span class="taxt_b">
-											<div>創始人：王博洋、<br/>楊馥誠、羅傑</div>
-											<div>投資時間：2019年<br/>02月</div>
+											<div>創始人：王博洋、
+												<br/>楊馥誠、羅傑</div>
+											<div>投資時間：2019年
+												<br/>02月</div>
 											<div>投資階段：Pre-A輪</div>
 										</span>
 									</div>
 								</div>
 							</div>
 						</li>
-					<li>
-						<div class="list list_top">
-							<div class="sz-list">
-								<img src="img/t7.png" class="daily_img">
-								<div class="list_textRow ">
-									<div class="text_a">加拉</div>
-									<!-- <div class="text_v">投資企業</div> -->
-									<!-- <div class="text_f">（有限合夥）</div> -->
-									<div class="text_x">/</div>
-									<span class="taxt_g">
+						<li>
+							<div class="list list_top">
+								<div class="sz-list">
+									<img src="img/t7.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">加拉</div>
+										<!-- <div class="text_v">投資企業</div> -->
+										<!-- <div class="text_f">（有限合夥）</div> -->
+										<div class="text_x">/</div>
+										<span class="taxt_g">
 											<div>創始人：魏博、羅森</div>
 											<div>投資時間：2018年05月</div>
 										</span>
+									</div>
 								</div>
-							</div>
 
-						</div>
-					</li>
-					<li>
-						<div class="list list_top">
-							<div class="sz-list">
-								<img src="img/t8.png" class="daily_img">
-								<div class="list_textRow ">
-									<div class="text_a">勝金莎</div>
-									<!-- <div class="text_v">實業有限公司</div> -->
-									<div class="text_x">/</div>
-									<span class="taxt_g">
+							</div>
+						</li>
+						<li>
+							<div class="list list_top">
+								<div class="sz-list">
+									<img src="img/t8.png" class="daily_img">
+									<div class="list_textRow ">
+										<div class="text_a">勝金莎</div>
+										<!-- <div class="text_v">實業有限公司</div> -->
+										<div class="text_x">/</div>
+										<span class="taxt_g">
 											<div>創始人：李宇琪</div>
 											<div>投資時間：2018年7月</div>
 										</span>
+									</div>
 								</div>
+
 							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination swiper-pagination2"></div>
+		</div>
+	</div>
 
-						</div>
-					</li>
-				</ul>
+
+	<!-- 聯系我們 -->
+	<div id="contact" class="contact">
+		<div class="contact_left">
+			<div class="content_tab_a">
+				<div class="content_tab_title">電話</div>
+				<div class="content_tab_subtext">0755-33349223</div>
+			</div>
+			<div class="content_tab_a">
+				<div class="content_tab_title">商業計劃書</div>
+				<div class="content_tab_subtext">BP@initsci.com</div>
+			</div>
+			<div class="content_tab_a">
+				<div class="content_tab_title">簡歷投遞</div>
+				<div class="content_tab_subtext">HR@initsci.com</div>
 			</div>
 		</div>
-		<!-- Add Pagination -->
-		<div class="swiper-pagination swiper-pagination2"></div>
-	</div>
-</div>
-
-
-<!-- 聯系我們 -->
-<div id="contact" class="contact">
-	<div class="contact_left">
-		<div class="content_tab_a">
-			<div class="content_tab_title">電話</div>
-			<div class="content_tab_subtext">0755-33349223</div>
-		</div>
-		<div class="content_tab_a">
-			<div class="content_tab_title">商業計劃書</div>
-			<div class="content_tab_subtext">BP@initsci.com</div>
-		</div>
-		<div class="content_tab_a">
-			<div class="content_tab_title">簡歷投遞</div>
-			<div class="content_tab_subtext">HR@initsci.com</div>
-		</div>
-	</div>
-	<div class="contact_center">
-		<div class="content_tab_b smb1">
-			<div class="content_tab_title">地址</div>
-			<div class="content_tab_subtext1">廣東省深圳市南山區</div>
-			<div class="content_tab_subtext1">大沖商務中心C座1503</div>
-		</div>
-		<div class="content_tab_b" style="position: relative;">
-			<div class="content_tab_title">關註我們</div>
-			<div class="content_tab_subtext smb2" id="Wechat">微信公衆號</div>
-			<img src="img/logo_fan.png" class="code_pc ishide">
-		</div>
-	</div>
-	<img src="img/p6.png" class="contact_map">
-</div>
-<div id="contact_m" class="contact">
-	<div class="contact_list_a">
-		<div class="contact_a">
-			<div class="greyText">電話</div>
-			<div class="specialText" style="color: #c69c6d;">0755-33349223</div>
-		</div>
-		<div class="contact_b">
-			<div class="greyText">地址</div>
-			<div class="specialText">
-				<div>廣東省深圳市南山區</div>
-				<div>大沖商務中心C座1503</div>
+		<div class="contact_center">
+			<div class="content_tab_b smb1">
+				<div class="content_tab_title">地址</div>
+				<div class="content_tab_subtext1">廣東省深圳市南山區</div>
+				<div class="content_tab_subtext1">大沖商務中心C座1503</div>
+			</div>
+			<div class="content_tab_b" style="position: relative;">
+				<div class="content_tab_title">關註我們</div>
+				<div class="content_tab_subtext smb2" id="Wechat">微信公衆號</div>
+				<img src="img/logo_fan.png" class="code_pc ishide">
 			</div>
 		</div>
+		<img src="img/p6.png" class="contact_map">
 	</div>
-	<div class="contact_list_b">
-		<div class="contact_a">
-			<div class="greyText">商業計劃書</div>
-			<div class="specialText">BP@initsci.com</div>
+	<div id="contact_m" class="contact">
+		<div class="contact_list_a">
+			<div class="contact_a">
+				<div class="greyText">電話</div>
+				<div class="specialText" style="color: #c69c6d;">0755-33349223</div>
+			</div>
+			<div class="contact_b">
+				<div class="greyText">地址</div>
+				<div class="specialText">
+					<div>廣東省深圳市南山區</div>
+					<div>大沖商務中心C座1503</div>
+				</div>
+			</div>
 		</div>
-		<div class="contact_b">
-			<div class="greyText">關註我們</div>
-			<img src="img/logo_fan.png">
+		<div class="contact_list_b">
+			<div class="contact_a">
+				<div class="greyText">商業計劃書</div>
+				<div class="specialText">BP@initsci.com</div>
+			</div>
+			<div class="contact_b">
+				<div class="greyText">關註我們</div>
+				<img src="img/logo_fan.png">
+			</div>
 		</div>
+		<div class="contact_list_c">
+			<div class="contact_a">
+				<div class="greyText">簡歷投遞</div>
+				<div class="specialText">HR@initsci.com</div>
+			</div>
+		</div>
+		<img src="img/p6.png" class="mapImg" />
 	</div>
-	<div class="contact_list_c">
-		<div class="contact_a">
-			<div class="greyText">簡歷投遞</div>
-			<div class="specialText">HR@initsci.com</div>
-		</div>
-	</div>
-	<img src="img/p6.png" class="mapImg" />
-</div>
-<div id="footer">© 2019元真價值投資 粵ICP備19027293號</div>
-<script>
-    $(function(){
-		var swiper = new Swiper('.swiper-container2', {
+	<div id="footer">© 2019元真價值投資 粵ICP備19027293號</div>
+	<script>
+		$(function () {
+			var swiper = new Swiper('.swiper-container2', {
+				pagination: {
+					el: '.swiper-pagination2',
+				},
+			});
+			var swiperPa = new Swiper('.pa-pt-let', {
+				pagination: {
+					el: '.swiper-pagination1',
+				},
+			});
+		})
+		// window.onresize = function () {
+		// 	var seeUser =  new Swiper('.scrollbox-user', {
+		// 		direction : 'vertical',
+		// 		height : window.innerWidth/19.2*5.4,
+		// 		pagination: {
+		// 			el: '.swiper-pagination',
+		// 		},
+		// 	})
+		// 	var seip = new Swiper('.daily_right', {
+		// 		direction : 'vertical',
+		// 		height : window.innerWidth/19.2*4.55,
+		// 		pagination: {
+		// 			el: '.swiper-pagination',
+		// 		},
+		// 	})
+		// }
+		var seeUser = new Swiper('.scrollbox-user', {
+			direction: 'vertical',
+			// height : window.innerWidth/19.2*5.4,
 			pagination: {
-				el: '.swiper-pagination2',
+				el: '.swiper-pagination',
 			},
-		});
-		var swiperPa = new Swiper('.pa-pt-let', {
+		})
+		$('#up').click(function () {
+			seeUser.slidePrev();
+		})
+		$('#down').click(function () {
+			seeUser.slideNext();
+		})
+		$(".user-hea-transition").hover(function (ev) {
+			var isName = $(this).parent()[0].className
+			if (isName == 'top-li') {
+				var aL = $(this).parents('li').index() + 3
+				$(this).parents('ul').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
+					.siblings('.scroll_text').hide(0)
+			} else {
+				var aL = $(this).parents('li').index() - 3
+				$(this).parents('ul').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
+					.siblings('.scroll_text').hide(0)
+			}
+		}, function () {
+			$(this).parent().siblings().find('.partner_img').removeClass('z-index-img')
+				.siblings('.scroll_text').show(0)
+		})
+		var seip = new Swiper('.daily_right', {
+			direction: 'vertical',
+			// height : window.innerWidth/19.2*4.55,
 			pagination: {
-				el: '.swiper-pagination1',
+				el: '.swiper-pagination',
 			},
-		});
-	})
-    // window.onresize = function () {
-    // 	var seeUser =  new Swiper('.scrollbox-user', {
-    // 		direction : 'vertical',
-    // 		height : window.innerWidth/19.2*5.4,
-    // 		pagination: {
-    // 			el: '.swiper-pagination',
-    // 		},
-    // 	})
-    // 	var seip = new Swiper('.daily_right', {
-    // 		direction : 'vertical',
-    // 		height : window.innerWidth/19.2*4.55,
-    // 		pagination: {
-    // 			el: '.swiper-pagination',
-    // 		},
-    // 	})
-    // }
-    var seeUser =  new Swiper('.scrollbox-user', {
-        direction : 'vertical',
-        // height : window.innerWidth/19.2*5.4,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    })
-    $('#up').click(function () {
-        seeUser.slidePrev();
-    })
-    $('#down').click(function () {
-        seeUser.slideNext();
-    })
-    $(".user-hea-transition").hover(function(ev){
-        var isName = $(this).parent()[0].className
-        if(isName == 'top-li') {
-            var aL = $(this).parents('li').index() + 3
-            $(this).parents('ul').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
-                .siblings('.scroll_text').hide(0)
-        }else {
-            var aL = $(this).parents('li').index() - 3
-            $(this).parents('ul').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
-                .siblings('.scroll_text').hide(0)
-        }
-    },function() {
-        $(this).parent().siblings().find('.partner_img').removeClass('z-index-img')
-            .siblings('.scroll_text').show(0)
-    })
-    var seip = new Swiper('.daily_right', {
-        direction : 'vertical',
-        // height : window.innerWidth/19.2*4.55,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    })
-    $('#daily_up').click(function () {
-        seip.slidePrev();
-    })
-    $('#daily_down').click(function () {
-        seip.slideNext();
-    })
-    $("#daily .sz-list").hover(function(ev){
-        var isName = $(this).parent()[0].className
-        if(isName == 'list list_button') {
-            var aL = $(this).parents('.list').index() + 3
-            $(this).parents('.swiper-slide').find('.list').eq(aL).find('.daily_img').addClass('z-index-img')
-                .siblings('.list_textRow').hide(0)
-        }else {
-            console.log(1999999)
-            var aL = $(this).parents('.list').index() - 3
-            console.log(aL)
-            $(this).parents('.swiper-slide').find('.list').eq(aL).find('.daily_img').addClass('z-index-img')
-                .siblings('.list_textRow').hide(0)
-        }
-    },function() {
-        $(this).parent().siblings().find('.daily_img').removeClass('z-index-img')
-            .siblings('.list_textRow').show(0)
-    })
-    $("#daily_m .sz-list").hover(function(ev){
-        var isName = $(this).parent()[0].className
-        if(isName == 'list list_button') {
-            var aL = $(this).parents('li').index() + 2
-            $(this).parents('.scroll_a').find('li').eq(aL).find('.daily_img').addClass('z-index-img')
-                .siblings('.list_textRow').hide(0)
-        }else {
-            console.log(991)
-            var aL = $(this).parents('li').index() - 2;
-            $(this).parents('.scroll_a').find('li').eq(aL).find('.daily_img').addClass('z-index-img')
-                .siblings('.list_textRow').hide(0)
-        }
-    },function() {
-        $('#daily_m .list .sz-list .daily_img').removeClass('z-index-img')
-            .siblings('.list_textRow').show(0)
-    })
-    $("#partner_m .swiper-container li .list").hover(function(ev){
-        var isName = $(this).parent()[0].className
-        console.log(isName)
-        if(isName == 'top-li') {
-            var aL = $(this).parents('li').index() + 2
-            $(this).parents('.scroll_a').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
-                .siblings('.scroll_text').hide(0)
-        }else {
-            console.log(19999)
-            var aL = $(this).parents('li').index() - 2;
-            $(this).parents('.scroll_a').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
-                .siblings('.scroll_text').hide(0)
-        }
-    },function() {
-        $('#partner_m .swiper-container .list .partner_img').removeClass('z-index-img')
-            .siblings('.scroll_text').show(0)
-    })
-</script>
+		})
+		$('#daily_up').click(function () {
+			seip.slidePrev();
+		})
+		$('#daily_down').click(function () {
+			seip.slideNext();
+		})
+		$("#daily .sz-list").hover(function (ev) {
+			var isName = $(this).parent()[0].className
+			if (isName == 'list list_button') {
+				var aL = $(this).parents('.list').index() + 3
+				$(this).parents('.swiper-slide').find('.list').eq(aL).find('.daily_img').addClass('z-index-img')
+					.siblings('.list_textRow').hide(0)
+			} else {
+				console.log(1999999)
+				var aL = $(this).parents('.list').index() - 3
+				console.log(aL)
+				$(this).parents('.swiper-slide').find('.list').eq(aL).find('.daily_img').addClass('z-index-img')
+					.siblings('.list_textRow').hide(0)
+			}
+		}, function () {
+			$(this).parent().siblings().find('.daily_img').removeClass('z-index-img')
+				.siblings('.list_textRow').show(0)
+		})
+		$("#daily_m .sz-list").hover(function (ev) {
+			var isName = $(this).parent()[0].className
+			if (isName == 'list list_button') {
+				var aL = $(this).parents('li').index() + 2
+				$(this).parents('.scroll_a').find('li').eq(aL).find('.daily_img').addClass('z-index-img')
+					.siblings('.list_textRow').hide(0)
+			} else {
+				console.log(991)
+				var aL = $(this).parents('li').index() - 2;
+				$(this).parents('.scroll_a').find('li').eq(aL).find('.daily_img').addClass('z-index-img')
+					.siblings('.list_textRow').hide(0)
+			}
+		}, function () {
+			$('#daily_m .list .sz-list .daily_img').removeClass('z-index-img')
+				.siblings('.list_textRow').show(0)
+		})
+		$("#partner_m .swiper-container li .list").hover(function (ev) {
+			var isName = $(this).parent()[0].className
+			console.log(isName)
+			if (isName == 'top-li') {
+				var aL = $(this).parents('li').index() + 2
+				$(this).parents('.scroll_a').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
+					.siblings('.scroll_text').hide(0)
+			} else {
+				console.log(19999)
+				var aL = $(this).parents('li').index() - 2;
+				$(this).parents('.scroll_a').find('li').eq(aL).find('.partner_img').addClass('z-index-img')
+					.siblings('.scroll_text').hide(0)
+			}
+		}, function () {
+			$('#partner_m .swiper-container .list .partner_img').removeClass('z-index-img')
+				.siblings('.scroll_text').show(0)
+		})
+	</script>
 </body>
 
 </html>
